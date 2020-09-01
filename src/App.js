@@ -1,25 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.scss";
 import { Header, Sidebar, Footer } from "./Components";
-import {
-  HomePage,
-  AboutUsPage,
-  FeaturesPage,
-  FAQsPage,
-  ContactUsPage,
-  OurTeamPage,
-  SiteInfoPage,
-  AuthPage,
-  BlogListPage,
-  BlogArticlePage,
-  SignUpPage,
-  DemoPage,
-  ValuesPage,
-  PricePage,
-  TutorHomePage,
-  TutorSignupPage,
-  ScheduleLessonPage
-} from "./Pages";
+import { HomePage, AboutUsPage } from "./Pages";
 import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
 import { connect } from "react-redux";
 import { initAppAction } from "./Redux/Actions";
@@ -75,25 +57,6 @@ class App extends React.Component {
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/about-us" component={AboutUsPage} />
-                <Route exact path="/features" component={FeaturesPage} />
-                <Route exact path="/faqs" component={FAQsPage} />
-                <Route exact path="/terms" component={SiteInfoPage} />
-                <Route exact path="/privacy" component={SiteInfoPage} />
-                <Route exact path="/refund" component={SiteInfoPage} />
-                <Route exact path="/contact-us" component={ContactUsPage} />
-                <Route exact path="/team" component={OurTeamPage} />
-                <Route exact path="/sign-in" component={AuthPage} />
-                <Route exact path="/forgot-password" component={AuthPage} />
-                <Route exact path="/new-password" component={AuthPage} />
-                <Route exact path="/blog" component={BlogListPage} />
-                <Route exact path="/blog/:id" component={BlogArticlePage} />
-                <Route exact path="/sign-up" component={SignUpPage} />
-                <Route exact path="/demo" component={DemoPage} />
-                <Route exact path="/values" component={ValuesPage} />
-                <Route exact path="/price" component={PricePage} />
-                <Route exact path="/tutor-home" component={TutorHomePage} />
-                <Route exact path="/tutor-signup" component={TutorSignupPage} />
-                <Route exact path="/schedule-lesson" component={ScheduleLessonPage} />
               </Switch>
             </div>
             <Footer />

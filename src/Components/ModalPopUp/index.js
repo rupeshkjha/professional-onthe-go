@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import add from "../../Assets/Icon/add.svg";
 import { ReactSVG } from "react-svg";
-import ScheduleLessonPage from "../../Pages/ScheduleLessonPage";
 export default class ModalPopUp extends React.Component {
   state = {
     isOpen: false,
@@ -41,9 +40,7 @@ export default class ModalPopUp extends React.Component {
               onClick={() => this.closeModal()}
             />{" "}
           </div>
-          <div className="content-area">
-            <ScheduleLessonPage />
-          </div>
+          <div className="content-area"></div>
         </div>
       </Modal>
     );
