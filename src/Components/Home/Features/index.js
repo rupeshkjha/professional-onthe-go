@@ -6,11 +6,11 @@ import { StartButton } from "../../";
 import { NavLink } from "react-router-dom";
 
 const texts = [
-  "We believe every student can excel if matched with the right tutor ",
-  "We believe a good tutor should be patient, kind, and knowledgeable in their field ",
-  "We believe one-on-one tutoring should be affordable and accessible to all",
-  "We believe the future of education will be online, and that online platforms have a significant advantage ",
-  "We believe in Christian values and philosophy, which guide all of our business decisions, including how we price our services to those who would otherwise not be able to afford it.  GradeGetter is meant to be a welcoming place for all students, from all walks of life where each student feels that they are welcomed, valued, and honored. ",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit ",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit ",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 ];
 
 export default class Features extends React.Component {

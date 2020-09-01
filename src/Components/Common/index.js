@@ -8,5 +8,3 @@ export { default as Toggle } from "./Toggle";
 export { default as ClientFeedback } from "./ClientFeedback";
 export { default as InputBox } from "./InputBox";
 export { default as CheckBox } from "./CheckBox";
-export { default as WeekHourSlider } from "./WeekHourSlider";
-export { default as HourlyRateSlider } from "./HourlyRateSlider";
