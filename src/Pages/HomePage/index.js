@@ -12,7 +12,10 @@ import {
   Transparency,
   OurCore,
   TutoringPhilosophy,
-  BlogStartArea
+  BlogStartArea,
+  OurService,
+  OurSupport,
+  Recognitions,
 } from "../../Components";
 import {
   getTutorAction,
@@ -40,9 +43,12 @@ class HomePage extends React.Component {
     return (
       <div className="home-page" ref={this.workContainer}>
         <BlogStartArea />
-       <StartArea  />
+        <StartArea />
         <HowItWorks />
         <OurCore />
+        <OurService />
+        <OurSupport />
+        <Recognitions />
         <div id="section-1-4">
           <WhyUs />
         </div>

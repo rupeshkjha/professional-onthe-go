@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import logo from "../../../Assets/Header/logo.svg";
+import logo from "../../../Assets/Common/logo.png";
 
 import hamburger from "../../../Assets/Header/hamburger.svg";
 import { NavLink, withRouter } from "react-router-dom";
@@ -77,11 +77,10 @@ class Header extends React.Component {
   }
 
   isLogOut = () => {
-    sessionStorage.clear()
-    localStorage.clear()
-    window.location.href = "/"
-    
-  }
+    sessionStorage.clear();
+    localStorage.clear();
+    window.location.href = "/";
+  };
 
   render() {
     const { user, token } = this.props;
@@ -91,7 +90,7 @@ class Header extends React.Component {
           <div className="signup-header-component">
             <div className="container signup-container">
               <NavLink className="menu-item" exact to="/">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" style={{ height: 150 }} />
               </NavLink>
             </div>
           </div>
@@ -99,7 +98,7 @@ class Header extends React.Component {
           <div className={`header-component`}>
             <div className="container signin-container">
               <NavLink className="menu-item" exact to="/">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" style={{ width: 150 }} />
               </NavLink>
             </div>
           </div>
@@ -113,7 +112,11 @@ class Header extends React.Component {
           >
             <div className="container normal-container">
               <NavLink className="menu-item show-web-flex" exact to="/">
-                <img src={logo} alt="logo" />
+                <img
+                  src={logo}
+                  alt="logo"
+                  style={{ width: 200, marginRight: 20 }}
+                />
               </NavLink>
               <NavLink className="menu-item show-mobile" exact to="/">
                 <img src={logo} alt="logo" />
@@ -129,31 +132,25 @@ class Header extends React.Component {
                 </div>
               ) : (
                 <div className="menu">
-                  <a className="menu-item" href="/#section-1-4">
-                  Buissness Setup
-                  </a>
-                  <NavLink className="menu-item" exact to="/features">
-                  Tax & Compliance
-                  </NavLink>
                   {/* <NavLink className="menu-item" exact to="/reviews">Reviews</NavLink> */}
                   {/* <NavLink className="menu-item" exact to="/">Reviews</NavLink> */}
                   <a className="menu-item" href="/#section-1-9">
-                  Trademark & IP
+                    Trademark & IP
                   </a>
                   {/* <NavLink className="menu-item" exact to="/tutors">Tutors</NavLink> */}
                   <a className="menu-item" href="/#section-1-7">
-                  Fundraising
+                    Fundraising
                   </a>
 
                   <NavLink className="menu-item" exact to="/demo">
-                  Contracts
+                    Contracts
                   </NavLink>
                   <NavLink className="menu-item" exact to="/values">
-                  NGO
+                    NGO
                   </NavLink>
                   {/* <NavLink className="menu-item" to="#section-1-5">Price</NavLink>  */}
                   <a className="menu-item" href="/#section-1-5">
-                  Property & personal
+                    Property & personal
                   </a>
                   <NavLink className="menu-item extra-item" exact to="/sign-in">
                     Sign In
@@ -183,7 +180,15 @@ class Header extends React.Component {
                       <a className="menu-item" onClick={this.isLogOut}>
                         Signout
                       </a>
-                      <a href={GetDashboardUrl(this.props.user, this.props.token)} className="shadow-object box-item v-c h-c" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={GetDashboardUrl(
+                          this.props.user,
+                          this.props.token
+                        )}
+                        className="shadow-object box-item v-c h-c"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         GO TO DASHBOARD
                       </a>
                     </>
