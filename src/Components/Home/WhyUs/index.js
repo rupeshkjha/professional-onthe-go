@@ -27,7 +27,7 @@ export default class WhyUs extends React.Component {
     return (
       <div className="whyus-component">
         <div className="container whyus-container">
-          <div className="title">Why Choose GradeGetter? </div>
+          <div className="title">Why Us? </div>
           <div className="row-container">
             <div className="row main-row">
               <div className="col-lg-6 col-area left-col">

@@ -8,22 +8,37 @@ import { CarouselLeftButton, CarouselRightButton } from "../../../Constant";
 const OwlCarousel = Loadable(() => import("react-owl-carousel"));
 
 export default class ClientSaying extends React.Component {
-  getConnection() {
-    return this.props.clients.map((client) => {
-      return {
-        name: client.tutor.name,
-        address: client.tutor.location,
-        level: 1,
-        knowledge: 3.5,
-        presentation: 4.7,
-        comment_date: new Date(client.reviewed_on).toDateString(),
-        description: client.review_content,
-      };
-    });
-  }
-
   render() {
-    const clients = this.getConnection();
+    const clients = [
+      {
+        name: "fgdf",
+        address: "fdgdf",
+        level: 1,
+        comment_date: new Date().toDateString(),
+        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+      },
+      {
+        name: "fgdf",
+        address: "fdgdf",
+        level: 1,
+        comment_date: new Date().toDateString(),
+        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+      },
+      {
+        name: "fgdf",
+        address: "fdgdf",
+        level: 1,
+        comment_date: new Date().toDateString(),
+        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+      },
+      {
+        name: "fgdf",
+        address: "fdgdf",
+        level: 1,
+        comment_date: new Date().toDateString(),
+        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+      },
+    ];
     return (
       <div className="clientsaying-component">
         <div className="container clientsaying-container">

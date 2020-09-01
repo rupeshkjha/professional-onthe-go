@@ -1,101 +1,228 @@
-@import '../../../theme.scss';
+@import "../../../theme.scss";
 
-.ourcore-component {
-    font-family: Maax;
-    display: flex;
-    flex-direction: column;
-    color: $secondary-text;
-    background: #F9FAFB;
+.startarea-component {
+  font-family: Maax;
+  margin-top: -70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
 
-    .ourcore-container {
-        display: flex;
-        flex-direction: column;
-
-        .title {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .main-row {
-            .left-area {
-                display: flex;
-                align-items: center;
-                img {
-                    width: 100%;
-                }
-            }
-            .right-area {
-                display: flex;
-                flex-direction: column;
-
-                .core-explain {
-                    display: flex;
-                    margin-bottom: 22px;
-
-                    img {
-                        margin-right: 11px;
-                        width: 28px;
-                        height: 28px;
-                    }
-
-                    .explain {
-                        font-size: 15px;
-                        line-height: 24px;
-                    }
-
-                    &:nth-of-type(4) {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
+  .startarea-content {
+    h1 {
+      font-weight: bold;
+      margin: 0;
+      color: #203662;
+      text-align: center;
+      margin-bottom: 30px;
     }
+
+    .startarea-container {
+      .main-row {
+        .left-area {
+          h1 {
+            font-weight: bold;
+            margin: 0;
+            color: #203662;
+          }
+
+          p {
+            font-weight: 500;
+            margin: 0;
+            color: #203662;
+          }
+
+          .form-area {
+          }
+        }
+        .pay-startBtn {
+        }
+      }
+
+      .logo-area {
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .ourcore-component {
-        padding: 107px 0 108px;
-        .ourcore-container {
-            .title {
-                font-size: 34px;
-                margin-bottom: 48px;
+  .startarea-component {
+    background: no-repeat url("../../../Assets/Home/index-bg1.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+
+    .startarea-content {
+      padding: 70px 0 30px;
+      display: flex;
+      flex-direction: column;
+
+      .startarea-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+
+        .main-row {
+          display: flex;
+          .left-area {
+            justify-content: start;
+            .left-text {
+              padding-right: 50px;
             }
-            .main-row {
-                .left-area {
-                    img {
-                        margin-left: -35px;
-                    }
-                }
-                .right-area {
-                    padding-left: 30px;
-                    .start-btn {
-                        margin-top: 45px;
-                    }
-                }
+            h1 {
+              font-size: 35px;
+              line-height: 57px;
+              color: #203662;
             }
+            .first-lesson {
+              display: flex;
+              align-items: center;
+              p {
+                font-size: 35px;
+                line-height: 40px;
+                color: #203662;
+              }
+              .free-text {
+                color: white;
+                margin-left: -110px;
+              }
+            }
+          }
+
+          .right-area {
+            img {
+              width: 100%;
+            }
+          }
         }
+
+        .pay-startBtn {
+          margin-top: -197px;
+          margin-bottom: 40px;
+          .pay-afford {
+            p {
+              font-size: 24px;
+              font-weight: bold;
+              margin-bottom: 30px;
+              color: #203662;
+            }
+            .display-hourlyRate {
+              font-size: 13px;
+              font-weight: normal;
+            }
+          }
+
+          .form-area {
+            margin-top: 43px;
+          }
+        }
+      }
+
+      .logo-area {
+        margin-top: 30px;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .ourcore-component {
-        padding: 75px 0 61px;
-        .ourcore-container {
-            .title {
-                font-size: 28px;
-                margin-bottom: 21px;
-            }
-            .main-row {
-                .left-area {
-                    margin-bottom: 30px;
-                }
+  .startarea-component {
+    background: no-repeat url("../../../Assets/Home/index-bg1.jpg");
+    background-position: -430px 0;
+    background-size: cover;
 
-                .right-area {
-                    .start-btn {
-                        margin: 60px auto 0 auto;
-                    }
-                }
+    .startarea-content {
+      padding-top: 70px;
+      .startarea-container {
+        padding: 70px 0 30px;
+
+        .main-row {
+          margin: 0;
+          .left-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .left-text {
+              h1 {
+                font-size: 34px;
+                line-height: 40px;
+                color: #203662;
+                text-align: center;
+              }
             }
+
+            .first-lesson {
+              display: flex;
+              align-items: center;
+              p {
+                font-size: 35px;
+                line-height: 40px;
+                color: #203662;
+              }
+              .free-text {
+                color: white;
+                margin-left: -110px;
+              }
+            }
+
+            .pay-afford {
+              width: 70%;
+              p {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 30px;
+              }
+            }
+
+            .form-area {
+              margin-top: 43px;
+            }
+          }
+
+          .right-area {
+            margin-top: 30px;
+            img {
+              width: 100%;
+            }
+          }
         }
+        .pay-startBtn {
+          margin-top: 30px;
+          margin-bottom: 40px;
+          .pay-afford {
+            padding: 20px;
+            p {
+              font-size: 24px;
+              font-weight: bold;
+              margin-bottom: 30px;
+              color: #203662;
+              text-align: center;
+            }
+            .display-hourlyRate {
+              font-size: 15px;
+              font-weight: normal;
+            }
+          }
+
+          .form-area {
+            .start-btn {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+
+      .logo-area {
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          height: 20px;
+        }
+      }
     }
+  }
 }

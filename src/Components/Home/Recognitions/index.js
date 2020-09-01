@@ -1,43 +1,56 @@
 import React from "react";
 import "./Recognitions.scss";
-import coreBG from "../../../Assets/Home/core-bg.png";
-import checkmark from "../../../Assets/Common/checkmark.png";
-import { StartButton } from "../../";
+import freeBg from "../../../Assets/Home/free-bg.png";
+import cbs from "../../../Assets/Home/CBS.png";
+import cnn from "../../../Assets/Home/CNN.png";
+import fox from "../../../Assets/Home/FOX.png";
+import boston from "../../../Assets/Home/The_Boston_Globe.png";
+import miami from "../../../Assets/Home/The-Miami-Herald-Logo.png";
+import homeRightImg1 from "../../../Assets/Home/home-rightImg1.png";
+import homeRightImg2 from "../../../Assets/Home/home-rightImg2.png";
+import homeRightImg3 from "../../../Assets/Home/home-rightImg3.png";
+import homeRightImg4 from "../../../Assets/Home/home-rightImg4.png";
+import homeRightImg5 from "../../../Assets/Home/home-rightImg5.png";
+import { StartButton, HourlyRateSlider } from "../../Common";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import { NavLink } from "react-router-dom";
 
-const texts = [
-  "We believe every student can excel if matched with the right tutor ",
-  "We believe a good tutor should be patient, kind, and knowledgeable in their field ",
-  "We believe one-on-one tutoring should be affordable and accessible to all",
-  "We believe the future of education will be online, and that online platforms have a significant advantage ",
-  "We believe in Christian values and philosophy, which guide all of our business decisions, including how we price our services to those who would otherwise not be able to afford it.  GradeGetter is meant to be a welcoming place for all students, from all walks of life where each student feels that they are welcomed, valued, and honored. ",
-];
-
 export default class Recognitions extends React.Component {
+  state = {
+    currentHourlyRate: 1,
+  };
+
+  hourlyRate = (value) => {
+    this.setState({ currentHourlyRate: value });
+  };
+
   render() {
     return (
-      <div className="ourcore-component">
-        <div className="container ourcore-container">
-          <div className="title">Recognitions</div>
-          <div className="row main-row">
-            <div className="col-lg-6 left-area">
-              <img src={coreBG} alt="core-bg" />
+      <div className="startarea-component">
+        <div className="startarea-content">
+          <div className="container startarea-container">
+            <h1>Media & Recognitions</h1>
+
+            <div className="row show-web web-logo">
+              <div className="col-lg-12 logo-area show-web-flex">
+                <img src={cnn} alt="cnn" />
+                <img src={cbs} alt="cbs" />
+                <img src={fox} alt="fox" />
+                <img src={boston} alt="boston" />
+                <img src={miami} alt="miami" />
+              </div>
             </div>
-            <div className="col-lg-6 right-area">
-              {texts.map((item, index) => {
-                return (
-                  <div className="core-explain" key={index}>
-                    <img src={checkmark} alt="checkmark" />
-                    <div className="explain">{item}</div>
-                  </div>
-                );
-              })}
-              <NavLink style={{ textDecoration: "none" }} to="/sign-up">
-                <StartButton
-                  className="start-btn"
-                  startText="Start Free Tiral"
-                />
-              </NavLink>
+            <div className="show-mobile">
+              <div className="col-lg-12 logo-area logo-area-mobile show-mobile-flex">
+                <img src={cbs} alt="cbs" />
+                <img src={cnn} alt="cnn" />
+                <img src={fox} alt="fox" />
+              </div>
+              <div className="col-lg-12 logo-area logo-area-mobile show-mobile-flex">
+                <img src={boston} alt="boston" />
+                <img src={miami} alt="miami" />
+              </div>
             </div>
           </div>
         </div>

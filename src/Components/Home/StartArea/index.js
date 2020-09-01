@@ -1,61 +1,44 @@
 import React from "react";
 import "./StartArea.scss";
-import freeBg from "../../../Assets/Home/free-bg.png";
-import cbs from "../../../Assets/Home/CBS.png";
-import cnn from "../../../Assets/Home/CNN.png";
-import fox from "../../../Assets/Home/FOX.png";
-import boston from "../../../Assets/Home/The_Boston_Globe.png";
-import miami from "../../../Assets/Home/The-Miami-Herald-Logo.png";
-import homeRightImg1 from "../../../Assets/Home/home-rightImg1.png";
-import homeRightImg2 from "../../../Assets/Home/home-rightImg2.png";
-import homeRightImg3 from "../../../Assets/Home/home-rightImg3.png";
-import homeRightImg4 from "../../../Assets/Home/home-rightImg4.png";
-import homeRightImg5 from "../../../Assets/Home/home-rightImg5.png";
-import { StartButton, HourlyRateSlider } from "../../Common";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import { NavLink } from "react-router-dom";
+import blogRight from "../../../Assets/Blog/footerbg.png";
+import footerPrice from "../../../Assets/Blog/footer-price.png";
 
 export default class StartArea extends React.Component {
-  state = {
-    currentHourlyRate: 1,
-  };
-
-  hourlyRate = (value) => {
-    this.setState({ currentHourlyRate: value });
-  };
-  
   render() {
-    
-
     return (
-      <div className="startarea-component">
-        <div className="startarea-content">
-         
-          <div className="container startarea-container">
-           
-          <h1>Lorem ipsum dolor sit </h1>
-
-            <div className="row show-web web-logo">
-
-              <div className="col-lg-12 logo-area show-web-flex">
-                <img src={cnn} alt="cnn" />
-                <img src={cbs} alt="cbs" />
-                <img src={fox} alt="fox" />
-                <img src={boston} alt="boston" />
-                <img src={miami} alt="miami" />
+      <div className="blogfooter-component">
+        <div className="container blogfooter-container">
+          <div className="row main-row">
+            <div className="col-lg-6 left-area">
+              <h1>No contract.</h1>
+              <h1>No min commitment.</h1>
+              <img
+                src={footerPrice}
+                className="show-mobile"
+                alt="footer-price"
+              />
+              <p>
+                Only 1-on-1 Pay As You Go Online Tutoring With U.S Based Tutors
+                In All Subjects & Test Prep
+              </p>
+              <div className="form-area">
+                <div className="email-area">
+                  <div className="send-box">
+                    <input
+                      className="email-input"
+                      placeholder="Enter your Email"
+                    />
+                    <button className="send-btn">Get Started</button>
+                  </div>
+                  <div className="explain">
+                    Over 10,000 verified and background checks U.S tutors ready
+                    to work with you
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="show-mobile">
-              <div className="col-lg-12 logo-area logo-area-mobile show-mobile-flex">
-                <img src={cbs} alt="cbs" />
-                <img src={cnn} alt="cnn" />
-                <img src={fox} alt="fox" />
-              </div>
-              <div className="col-lg-12 logo-area logo-area-mobile show-mobile-flex">
-                <img src={boston} alt="boston" />
-                <img src={miami} alt="miami" />
-              </div>
+            <div className="col-lg-6 right-area show-web-flex">
+              <img src={blogRight} alt="right-bg" />
             </div>
           </div>
         </div>

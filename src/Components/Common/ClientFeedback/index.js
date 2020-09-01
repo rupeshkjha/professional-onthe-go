@@ -1,7 +1,5 @@
 import React from "react";
 import "./ClientFeedback.scss";
-import StarRatings from "react-star-ratings";
-import { StarSVGViewBox, StarSVGIconPath } from "../../../Constant";
 
 export default class ClientFeedback extends React.Component {
   render() {
@@ -21,30 +19,6 @@ export default class ClientFeedback extends React.Component {
               <div className="basic">
                 {" "}
                 <span className="name">{item.name}</span> from {item.address}{" "}
-              </div>
-              <div className="sub-info">
-                <div className="subject">Knowledge: </div>
-                <StarRatings
-                  rating={item.knowledge}
-                  starDimension="16px"
-                  starSpacing="2.14px"
-                  starRatedColor="#23A4EF"
-                  starEmptyColor="#D3EDFC"
-                  svgIconViewBox={StarSVGViewBox}
-                  svgIconPath={StarSVGIconPath}
-                />
-              </div>
-              <div className="sub-info">
-                <div className="subject">Presentation: </div>
-                <StarRatings
-                  rating={item.presentation}
-                  starDimension="16px"
-                  starSpacing="2.14px"
-                  starRatedColor="#23A4EF"
-                  starEmptyColor="#D3EDFC"
-                  svgIconViewBox={StarSVGViewBox}
-                  svgIconPath={StarSVGIconPath}
-                />
               </div>
             </div>
           </div>
