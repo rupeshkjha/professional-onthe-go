@@ -1,101 +1,107 @@
-@import '../../../theme.scss';
+@import "../../../theme.scss";
 
 .ourcore-component {
-    font-family: Maax;
+  font-family: Maax;
+  display: flex;
+  flex-direction: column;
+  color: $secondary-text;
+  background: #f9fafb;
+
+  .ourcore-container {
     display: flex;
     flex-direction: column;
-    color: $secondary-text;
-    background: #F9FAFB;
 
-    .ourcore-container {
+    .title {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .main-row {
+      .left-area {
+        display: flex;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+      .right-area {
         display: flex;
         flex-direction: column;
 
-        .title {
-            text-align: center;
-            font-weight: bold;
+        .core-explain {
+          display: flex;
+          margin-bottom: 22px;
+
+          img {
+            margin-right: 11px;
+            width: 28px;
+            height: 28px;
+          }
+
+          .explain {
+            font-size: 15px;
+            line-height: 24px;
+          }
+
+          &:nth-of-type(4) {
+            margin-bottom: 0;
+          }
         }
-
-        .main-row {
-            .left-area {
-                display: flex;
-                align-items: center;
-                img {
-                    width: 100%;
-                }
-            }
-            .right-area {
-                display: flex;
-                flex-direction: column;
-
-                .core-explain {
-                    display: flex;
-                    margin-bottom: 22px;
-
-                    img {
-                        margin-right: 11px;
-                        width: 28px;
-                        height: 28px;
-                    }
-
-                    .explain {
-                        font-size: 15px;
-                        line-height: 24px;
-                    }
-
-                    &:nth-of-type(4) {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
+      }
     }
+    .logo-area {
+      justify-content: space-between;
+    }
+    .show-web-flex {
+      display: flex;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .ourcore-component {
-        padding: 107px 0 108px;
-        .ourcore-container {
-            .title {
-                font-size: 34px;
-                margin-bottom: 48px;
-            }
-            .main-row {
-                .left-area {
-                    img {
-                        margin-left: -35px;
-                    }
-                }
-                .right-area {
-                    padding-left: 30px;
-                    .start-btn {
-                        margin-top: 45px;
-                    }
-                }
-            }
+  .ourcore-component {
+    padding: 107px 0 108px;
+    .ourcore-container {
+      .title {
+        font-size: 34px;
+        margin-bottom: 48px;
+      }
+      .main-row {
+        .left-area {
+          img {
+            margin-left: -35px;
+          }
         }
+        .right-area {
+          padding-left: 30px;
+          .start-btn {
+            margin-top: 45px;
+          }
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .ourcore-component {
-        padding: 75px 0 61px;
-        .ourcore-container {
-            .title {
-                font-size: 28px;
-                margin-bottom: 21px;
-            }
-            .main-row {
-                .left-area {
-                    margin-bottom: 30px;
-                }
-
-                .right-area {
-                    .start-btn {
-                        margin: 60px auto 0 auto;
-                    }
-                }
-            }
+  .ourcore-component {
+    padding: 75px 0 61px;
+    .ourcore-container {
+      .title {
+        font-size: 28px;
+        margin-bottom: 21px;
+      }
+      .main-row {
+        .left-area {
+          margin-bottom: 30px;
         }
+
+        .right-area {
+          .start-btn {
+            margin: 60px auto 0 auto;
+          }
+        }
+      }
     }
+  }
 }

@@ -6,11 +6,11 @@ import { StartButton } from "../../";
 import { NavLink } from "react-router-dom";
 
 const texts = [
-  "We believe every student can excel if matched with the right tutor ",
-  "We believe a good tutor should be patient, kind, and knowledgeable in their field ",
-  "We believe one-on-one tutoring should be affordable and accessible to all",
-  "We believe the future of education will be online, and that online platforms have a significant advantage ",
-  "We believe in Christian values and philosophy, which guide all of our business decisions, including how we price our services to those who would otherwise not be able to afford it.  GradeGetter is meant to be a welcoming place for all students, from all walks of life where each student feels that they are welcomed, valued, and honored. ",
+  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
+  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
+  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
+  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
+  "Lorem ipsum dolor amet mustache knausgaard +1.",
 ];
 
 export default class SearchArea extends React.Component {
@@ -19,6 +19,15 @@ export default class SearchArea extends React.Component {
       <div className="ourcore-component">
         <div className="container ourcore-container">
           <div className="title">SearchArea</div>
+          <div className="form-area">
+
+            <div className="send-box">
+              <input className="text-input" placeholder="Enter Your Query: " />
+              <button className="send-btn">Get Started</button>
+              <div className="bg-dot" alt="bgdot"></div>
+            </div>
+
+          </div>
           <div className="row main-row">
             <div className="col-lg-6 left-area">
               <img src={coreBG} alt="core-bg" />
