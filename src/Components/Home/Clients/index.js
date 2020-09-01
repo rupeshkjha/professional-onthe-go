@@ -26,14 +26,6 @@ export default class Clients extends React.Component {
           <div className="title">Clients</div>
           <div className="main-row">
             <div className="mb-3">
-              {/* {texts.map((item, index) => {
-                return (
-                  <div className="core-explain" key={index}>
-                    <img src={checkmark} alt="checkmark" />
-                    <div className="explain">{item}</div>
-                  </div>
-                );
-              })} */}
               <div className="col-lg-12 logo-area show-web-flex">
                 <img src={cnn} alt="cnn" />
                 <img src={cbs} alt="cbs" />

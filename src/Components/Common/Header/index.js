@@ -4,8 +4,6 @@ import logo from "../../../Assets/Common/logo.png";
 
 import hamburger from "../../../Assets/Header/hamburger.svg";
 import { NavLink, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
-import { toggleSidebar } from "../../../Redux/Actions";
 import { ReactSVG } from "react-svg";
 import { GetDashboardUrl } from "../../../Constant";
 
@@ -28,14 +26,10 @@ class Header extends React.Component {
     });
   };
 
-  openSidebar = () => {
-    this.props.toggleSidebar(true);
-  };
-
   checkRoute = () => {
     if (
       this.props.location.pathname === "/" ||
-      this.props.location.pathname === "/tutor-home"
+      this.props.location.pathname === "/profile"
     ) {
       return true;
     }
@@ -56,7 +50,7 @@ class Header extends React.Component {
 
   checkPage = () => {
     const pathName = this.props.location.pathname;
-    if (pathName === "/sign-up" || pathName === "/tutor-signup")
+    if (pathName === "/sign-up" || pathName === "/profile")
       return "sign-up";
     if (
       pathName === "/sign-in" ||
@@ -67,7 +61,7 @@ class Header extends React.Component {
     return "normal";
   };
 
-  checkTutor = () => {
+  checkProfile = () => {
     const pathName = this.props.location.pathname;
     return pathName === "/profile" ? true : false;
   };
@@ -103,119 +97,108 @@ class Header extends React.Component {
             </div>
           </div>
         ) : (
-          <div
-            className={`header-component ${
-              this.state.transform || !this.checkRoute()
-                ? "transform-header"
-                : ""
-            }`}
-          >
-            <div className="container normal-container">
-              <NavLink className="menu-item show-web-flex" exact to="/">
-                <img
-                  src={logo}
-                  alt="logo"
-                  style={{ width: 200, marginRight: 20 }}
-                />
-              </NavLink>
-              <NavLink className="menu-item show-mobile" exact to="/">
-                <img src={logo} alt="logo" />
-              </NavLink>
-              {this.checkTutor() ? (
-                <div className="menu">
-                  <NavLink className="menu-item extra-item" exact to="/sign-in">
-                    Sign In
+              <div
+                className={`header-component ${
+                  this.state.transform || !this.checkRoute()
+                    ? "transform-header"
+                    : ""
+                  }`}
+              >
+                <div className="container normal-container">
+                  <NavLink className="menu-item show-web-flex" exact to="/">
+                    <img
+                      src={logo}
+                      alt="logo"
+                      style={{ width: 200, marginRight: 20 }}
+                    />
                   </NavLink>
-                  <NavLink className="menu-item extra-item" exact to="/sign-up">
-                    Get Started
+                  <NavLink className="menu-item show-mobile" exact to="/">
+                    <img src={logo} alt="logo" />
                   </NavLink>
-                </div>
-              ) : (
-                <div className="menu">
-                  {/* <NavLink className="menu-item" exact to="/reviews">Reviews</NavLink> */}
-                  {/* <NavLink className="menu-item" exact to="/">Reviews</NavLink> */}
-
-                  {/* <NavLink className="menu-item" exact to="/tutors">Tutors</NavLink> */}
-                </div>
-              )}
-              {this.checkTutor() ? (
-                <div className="menu extra-menu">
-                  <NavLink className="menu-item" exact to="/sign-in">
-                    Sign In
-                  </NavLink>
-                   <NavLink
-                    className="menu-item sign-up"
-                    exact
-                    to="/tutor-signup"
-                  >
-                    Get Started
-                  </NavLink>
-                </div>
-              ) : (
-                <div className="menu extra-menu">
-                  {this.isLogin() ? (
-                    <>
-                      <a className="menu-item" onClick={this.isLogOut}>
-                        Signout
-                      </a>
-                      <a
-                        href={GetDashboardUrl(
-                          this.props.user,
-                          this.props.token
-                        )}
-                        className="shadow-object box-item v-c h-c"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Profile
-                      </a>
-                    </>
-                  ) : (
-                    <>
-                      <NavLink className="menu-item" exact to="/about-us">
-                        About Us
-                      </NavLink>
-                      <NavLink className="menu-item" exact to="/about-us">
-                      Business Setup
-                      </NavLink>
-                     
-                      <NavLink className="menu-item" exact to="/about-us">
-                        Trademark & IP
-                      </NavLink>
-                      <NavLink className="menu-item" exact to="/about-us">
-                        Fundraising
-                      </NavLink>
-                      <NavLink className="menu-item" exact to="/">
+                  {this.checkProfile() ? (
+                    <div className="menu">
+                      <NavLink className="menu-item extra-item" exact to="/sign-in">
                         Sign In
-                      </NavLink>
-                      <NavLink className="menu-item sign-up" exact to="/">
+                  </NavLink>
+                      <NavLink className="menu-item extra-item" exact to="/sign-up">
                         Get Started
+                  </NavLink>
+                    </div>
+                  ) : (
+                      <div className="menu">
+                      </div>
+                    )}
+                  {this.checkProfile() ? (
+                    <div className="menu extra-menu">
+                      <NavLink className="menu-item" exact to="/sign-in">
+                        Sign In
+                  </NavLink>
+                      <NavLink
+                        className="menu-item sign-up"
+                        exact
+                        to="/profile"
+                      >
+                        Get Started
+                  </NavLink>
+                    </div>
+                  ) : (
+                      <div className="menu extra-menu">
+                        {this.isLogin() ? (
+                          <>
+                            <a className="menu-item" onClick={this.isLogOut}>
+                              Signout
+                      </a>
+                            <a
+                              href={GetDashboardUrl(
+                                this.props.user,
+                                this.props.token
+                              )}
+                              className="shadow-object box-item v-c h-c"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Profile
+                      </a>
+                          </>
+                        ) : (
+                            <>
+                              <NavLink className="menu-item" exact to="/about-us">
+                                About Us
                       </NavLink>
-                    </>
-                  )}
-                </div>
-              )}
-              <div className="show-mobile">
-                <NavLink className="header-start-button" exact to="/sign-up">
-                  Get Started
+                              <NavLink className="menu-item" exact to="/about-us">
+                                Business Setup
+                      </NavLink>
+
+                              <NavLink className="menu-item" exact to="/about-us">
+                                Trademark & IP
+                      </NavLink>
+                              <NavLink className="menu-item" exact to="/about-us">
+                                Fundraising
+                      </NavLink>
+                              <NavLink className="menu-item" exact to="/">
+                                Sign In
+                      </NavLink>
+                              <NavLink className="menu-item sign-up" exact to="/">
+                                Get Started
+                      </NavLink>
+                            </>
+                          )}
+                      </div>
+                    )}
+                  <div className="show-mobile">
+                    <NavLink className="header-start-button" exact to="/sign-up">
+                      Get Started
                 </NavLink>
+                  </div>
+                  <div className="hamburger" onClick={this.openSidebar}>
+                    <ReactSVG src={hamburger} />
+                  </div>
+                </div>
               </div>
-              <div className="hamburger" onClick={this.openSidebar}>
-                <ReactSVG src={hamburger} />
-              </div>
-            </div>
-          </div>
-        )}
+            )}
       </React.Fragment>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    token: state.Auth.token,
-    user: state.Auth.user,
-  };
-}
-
-export default connect(mapStateToProps, { toggleSidebar })(withRouter(Header));
+export default (withRouter(Header));

@@ -7,7 +7,6 @@ import instagram from "../../../Assets/Home/instagram.png";
 import arrow from "../../../Assets/Common/arrow.svg";
 import { ReactSVG } from "react-svg";
 import { NavLink, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
 
 class Footer extends React.Component {
   checkSignInPage = () => {
@@ -17,7 +16,7 @@ class Footer extends React.Component {
       pathName === "/forgot-password" ||
       pathName === "/new-password" ||
       pathName === "/sign-up" ||
-      pathName === "/tutor-signup"
+      pathName === "/profile"
     ) {
       return true;
     }
@@ -87,10 +86,9 @@ class Footer extends React.Component {
             </div>
             <div className="tutor-area-mobile">
               <div className="tutor-btn">
-                <NavLink to="/tutor-home" className="sub-btn tutor-name">
+                <NavLink to="/" className="sub-btn tutor-name">
                   Get Started
                 </NavLink>
-                {/* <div className="sub-btn tutor-name">Become a tutor</div> */}
                 <div className="sub-btn arrow-btn">
                   <ReactSVG src={arrow} style={{ fill: "white" }} />
                 </div>
@@ -112,7 +110,6 @@ class Footer extends React.Component {
             <NavLink to="/" className="sub-btn tutor-name">
               Get Started
             </NavLink>
-            {/* <div className="sub-btn tutor-name">Become a tutor</div> */}
             <div className="sub-btn arrow-btn">
               <ReactSVG src={arrow} style={{ fill: "white" }} />
             </div>
@@ -123,8 +120,5 @@ class Footer extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {};
-}
 
-export default connect(mapStateToProps, {})(withRouter(Footer));
+export default (withRouter(Footer));

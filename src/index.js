@@ -2,22 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { Provider } from "react-redux";
 import jQuery from "jquery";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "./Redux/Store";
 
 window.jQuery = jQuery;
 
 ReactDOM.render(
-  <Provider store={store}>
-    {/* <PersistGate loading={null} persistor={persistor}> */}
-    <App />
-    {/* </PersistGate> */}
-  </Provider>,
-  document.getElementById("root")
+  <App />
+  , document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

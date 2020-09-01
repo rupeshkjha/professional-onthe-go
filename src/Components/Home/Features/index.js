@@ -32,12 +32,6 @@ export default class Features extends React.Component {
                   </div>
                 );
               })}
-              {/* <NavLink style={{ textDecoration: "none" }} to="/sign-up">
-                <StartButton
-                  className="start-btn"
-                  startText="Start Free Tiral"
-                />
-              </NavLink> */}
             </div>
           </div>
         </div>

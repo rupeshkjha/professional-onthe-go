@@ -1,19 +1,10 @@
 import React from "react";
 import "./HomePage.scss";
-import { connect } from "react-redux";
 import {
-  StartArea,
-  Instructors,
   ClientSaying,
-  Tutors,
   Pricing,
   HowItWorks,
   WhyUs,
-  Transparency,
-  OurCore,
-  TutoringPhilosophy,
-  BlogStartArea,
-  OurService,
   OurSupport,
   Recognitions,
   SearchArea,
@@ -54,13 +45,9 @@ const plans = [
 class HomePage extends React.Component {
   state = {};
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   render() {
-    const { tutors, connections } = this.props;
-    console.log("Lorem Here ->", connections);
-    console.log("Lorem Here ->", tutors);
-    console.log("Lorem Here ->", plans);
 
     return (
       <div className="home-page" ref={this.workContainer}>
@@ -68,7 +55,7 @@ class HomePage extends React.Component {
         <Features />
         <Clients />
         {plans ? <Pricing plans={plans} /> : null}
-        <OurService />
+        {/* <OurService /> */}
         <WhyUs />
         <Recognitions />
         <ClientSaying />
@@ -79,6 +66,5 @@ class HomePage extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({});
 
-export default connect(mapStateToProps, {})(withRouter(HomePage));
+export default (withRouter(HomePage));

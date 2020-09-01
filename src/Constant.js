@@ -18,9 +18,9 @@ export const CarouselRightButton = `
 
 export const GetDashboardUrl = (user, token) => {
   return (
-    (user.role === "student"
-      ? process.env.REACT_APP_STUDENT_DASHBOARD_URL
-      : process.env.REACT_APP_TUTOR_DASHBOARD_URL) +
+    (user.role === "profile"
+      ? process.env.REACT_APP_DASHBOARD_URL
+      : process.env.REACT_APP_DASHBOARD_URL) +
     "/auth?token=" +
     token
   );

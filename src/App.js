@@ -3,8 +3,6 @@ import "./App.scss";
 import { Header, Sidebar, Footer } from "./Components";
 import { HomePage, AboutUsPage } from "./Pages";
 import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
-import { connect } from "react-redux";
-import { initAppAction } from "./Redux/Actions";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -25,10 +23,6 @@ class App extends React.Component {
     return {
       isBlur: props.isSidebarOpen,
     };
-  }
-
-  componentDidMount() {
-    this.props.initAppAction();
   }
 
   render() {
@@ -67,10 +61,5 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    isSidebarOpen: state.Sidebar.isOpen,
-  };
-};
 
-export default connect(mapStateToProps, { initAppAction })(App);
+export default (App);
