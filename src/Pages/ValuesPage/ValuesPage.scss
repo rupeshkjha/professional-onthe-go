@@ -1,0 +1,542 @@
+@import '../../theme.scss';
+
+.values-page {
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-text;
+    background: #F9FAFB;
+
+    .values-container {
+        box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+        background: white;
+        z-index: 1;            
+        .main-row {
+            .values-right {
+                padding: 50px 45px 45px 45px;
+                .values-block {
+                    margin-bottom: 50px;
+                    .item-title {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                        opacity: 0.6;
+                    }
+                    .item-description {
+                        
+                        margin-bottom: 15px;
+                    }
+                    .max-transparency {
+                        .additional-bg {
+                            width: 95%;
+                            height: 80px;
+                            left: 26px;
+                            right: 2px;
+                            top: 378px;
+                            bottom: -14px;
+                            
+                        }
+
+                        .price-table {
+                            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                            background: white;
+                            z-index: 2;
+                            position: relative;
+                            background: white;
+                            p {
+                                font-weight: bold;
+                            }
+                        }
+
+                        .data-points-block{
+                            margin-bottom: 50px;
+                            .data-points-title{
+                                font-size: 15;
+                                font-weight: bold;
+                                
+                                margin-bottom: 30px;
+                            }
+                            .data-points-explain {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                .explain-des {
+                                    margin-left: 10px;
+                                    font-size: 15;                                                                                
+                                }.explain-price {
+                                    margin-left: 5px;
+                                    font-size: 15; 
+                                    font-weight: bold;                                                                               
+                                }
+                            }                                                                                             
+                        }    
+
+
+                        .data-pooints-note {
+                            display: flex;
+                            padding: 20px;
+                            background: #F9FAFB;
+                            .note-title {
+                                
+                                font-weight: bold;
+                            }
+                            .note-des {
+                                
+                                margin-left: 5px;
+                            }
+                        }                         
+                    }
+                }
+                .final-block{
+                    .sincerely-mail {
+                        
+                        margin: 7px 0 7px;
+                        
+                    }
+                    .ceo-name {
+                        
+                        font-size: 15;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .values-left {
+                padding: 50px 35px 35px 35px;
+                background: #F9FAFB;
+                .ceo-img-name {
+                    border-bottom: 1px solid #E7EBEE;
+                    .ceo-photo {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                    }
+                    .ceo-name {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin: 10px 0 10px;
+                    }
+                    .ceo-mail {
+                        margin-bottom: 25px;
+                    }                        
+                }
+
+                .ceo-phone-mail {
+                    border-bottom: 1px solid #E7EBEE;
+                    padding: 10px 0 10px;
+                    .phone-mail-item {
+                        display: flex;
+                        align-items: center;
+                        margin: 15px 0 15px;
+                        .des {
+                            margin-left: 10px;
+                        }
+                    }
+
+                }
+
+                .ceo-share {                       
+                    
+                    .share-header {
+                        margin: 25px 0 25px;
+                    }
+                    .share-title {
+                        font-weight: bold;
+                    }
+                    .share-icon-block {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        .share-btn {
+                            margin: 5px 0;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .values-page {
+        padding: 50px 0 108px;
+        background: no-repeat url('../../Assets/Home/values-bg.png');
+        background-position: center;
+        background-size: 100% 100%;
+        color: #203662;
+        font-size: 15px;
+        .values-container {
+            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+            background: white;
+            z-index: 1;            
+            .main-row {
+                .values-right {
+                    // padding: 50px 45px 45px 45px;
+                    // animation: contentAppear 0.3s ease-out;
+                    // width: calc(100% - 493px);
+                    // margin-left: auto;
+                    // max-height: 120vh;
+                    // overflow-y: auto;
+                    // overflow-x: hidden;
+                    .values-block {
+                        margin-bottom: 50px;
+                        .item-title {
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                            opacity: 0.6;
+                        }
+                        .item-description {
+                            
+                            margin-bottom: 15px;
+                        }
+                        .max-transparency {
+
+                            .additional-bg {
+                                    left: 26px;
+                                    right: 2px;
+                                    top: 378px;
+                                    bottom: -14px;
+                                }
+                            .price-table-block {
+                                margin: 50px 0 50px;
+                                .price-table {
+                                    box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                                    background: white;
+                                    z-index: 2;
+                                    position: relative;
+                                    background: white;
+                                    .table-item {
+                                        display: flex;
+                                        align-items: center;
+                                        p {
+                                            font-weight: bold;
+                                        }    
+                                        .table-left {
+                                            padding: 20px 0 20px 20px;
+                                            border-right: #E7EBEE solid 2px;
+                                        }
+                                        .table-left1 {
+                                            padding: 20px 0 20px 20px;
+                                            border-right: #E7EBEE solid 2px;
+                                            background: #F9FAFB;
+                                        }
+                                        .table-right {
+                                            padding: 20px 0 20px 20px;
+                                        }   
+                                        .table-right1 {
+                                            padding: 20px 0 20px 20px;
+                                            background: #F9FAFB;
+                                        }
+                                        .total-cost {
+                                            font-size: 21px;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .data-points-block{
+                                margin-bottom: 50px;
+                                .data-points-title{
+                                    font-size: 15;
+                                    font-weight: bold;
+                                    
+                                    margin-bottom: 30px;
+                                }
+                                .data-points-explain {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+                                    .explain-des {
+                                        margin-left: 10px;
+                                        font-size: 15;                                                                                
+                                    }.explain-price {
+                                        margin-left: 5px;
+                                        font-size: 15; 
+                                        font-weight: bold;                                                                               
+                                    }
+                                }                                                                                             
+                            }    
+
+
+                            .data-pooints-note {
+                                display: flex;
+                                padding: 20px;
+                                background: #F9FAFB;
+                                .note-title {
+                                    
+                                    font-weight: bold;
+                                }
+                                .note-des {
+                                    
+                                    margin-left: 5px;
+                                }
+                            }                         
+                        }
+                    }
+                    .final-block{
+                        .sincerely-mail {
+                            
+                            margin: 7px 0 7px;
+                            
+                        }
+                        .ceo-name {
+                            
+                            font-size: 15;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .values-left {
+                    padding: 50px 35px 35px 35px;
+                    background: #F9FAFB;
+                    // position: sticky;
+                    // top: 0;
+                    // overflow-x: hidden;
+                    // position: fixed;
+                    // top: 0;
+                    // left: 0;
+                    // right: 0;
+                    // z-index: 1;
+                    
+                    // position: sticky;
+                    // top: 0;
+                    // left: 0;
+
+                    .ceo-img-name {
+                        border-bottom: 1px solid #E7EBEE;
+
+                        .ceo-name {
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin: 10px 0 10px;
+                        }
+                        .ceo-mail {
+                            margin-bottom: 25px;
+                        }                        
+                    }
+
+                    .ceo-phone-mail {
+                        border-bottom: 1px solid #E7EBEE;
+                        padding: 10px 0 10px;
+                        .phone-mail-item {
+                            display: flex;
+                            align-items: center;
+                            margin: 15px 0 15px;
+                            .des {
+                                margin-left: 10px;
+                            }
+                        }
+
+                    }
+                    .share-sticky {
+                        position: sticky;
+                        top: 100px;                        
+                    }
+
+                    .ceo-share {                       
+                        
+                        .share-header {
+                            margin: 25px 0 25px;
+                        }
+                        .share-title {
+                            font-weight: bold;
+                        }
+                        .share-icon-block {
+                            .share-icon {
+                                margin: 20px 0 20px;
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .values-page {
+        padding: 50px 0 108px;
+        background: no-repeat url('../../Assets/Home/values-bg.png');
+        background-position: center;
+        background-size: 100% 100%;
+        color: #203662;
+        font-size: 15px;
+        .values-container {
+            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+            background: white;
+            z-index: 1;            
+            .main-row {
+                .values-right {
+                    padding: 50px 45px 45px 45px;
+                    .values-block {
+                        margin-bottom: 50px;
+                        .item-title {
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                            opacity: 0.6;
+                        }
+                        .item-description {
+                            
+                            margin-bottom: 15px;
+                        }
+                        .max-transparency {
+                            .additional-bg {
+                                width: 95%;
+                                height: 80px;
+                                left: 36px;
+                                right: 2px;
+                                top: 368px;
+                                bottom: -14px;
+                                // left: 26px;
+                                // right: 2px;
+                                // top: 420px;
+                                // bottom: -14px;
+                            }
+                            .price-table-block {
+                                margin: 50px 0 50px;
+                                .price-table {
+                                    box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                                    background: white;
+                                    z-index: 2;
+                                    position: relative;
+                                    background: white;
+                                    .table-item {
+                                        display: flex;
+                                        align-items: center;
+                                        p {
+                                            font-weight: bold;
+                                        }    
+                                        .table-left {
+                                            padding: 20px 0 20px 20px;
+                                            border-right: #E7EBEE solid 2px;
+                                        }
+                                        .table-left1 {
+                                            padding: 20px 0 20px 20px;
+                                            border-right: #E7EBEE solid 2px;
+                                            background: #F9FAFB;
+                                        }
+                                        .table-right {
+                                            padding: 20px 0 20px 20px;
+                                        }   
+                                        .table-right1 {
+                                            padding: 20px 0 20px 20px;
+                                            background: #F9FAFB;
+                                        }
+                                    }
+                                }
+                            }
+                            .data-points-block{
+                                margin-bottom: 50px;
+                                .data-points-title{
+                                    font-size: 15;
+                                    font-weight: bold;
+                                    
+                                    margin-bottom: 30px;
+                                }
+                                .data-points-explain {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+                                    flex-wrap: wrap;
+                                    .explain-des {
+                                        margin-left: 10px;
+                                        font-size: 15;                                                                                
+                                    }.explain-price {
+                                        margin-left: 5px;
+                                        font-size: 15; 
+                                        font-weight: bold;                                                                               
+                                    }
+                                }                                                                                             
+                            }    
+                            .data-pooints-note {
+                                display: flex;
+                                padding: 20px;
+                                background: #F9FAFB;
+                                .note-title {                                    
+                                    font-weight: bold;
+                                }
+                                .note-des {
+                                    
+                                    margin-left: 5px;
+                                }
+                            }                         
+                        }
+                    }
+                    .final-block{
+                        .sincerely-mail {
+                            
+                            margin: 7px 0 7px;
+                            
+                        }
+                        .ceo-name {
+                            
+                            font-size: 15;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .values-left {
+                    padding: 50px 35px 35px 35px;
+                    background: #F9FAFB;
+                    .ceo-img-name {
+                        border-bottom: 1px solid #E7EBEE;
+
+                        .ceo-name {
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin: 10px 0 10px;
+                        }
+                        .ceo-mail {
+                            margin-bottom: 25px;
+                        }                        
+                    }
+
+                    .ceo-phone-mail {
+                        border-bottom: 1px solid #E7EBEE;
+                        padding: 10px 0 10px;
+                        .phone-mail-item {
+                            display: flex;
+                            align-items: center;
+                            margin: 15px 0 15px;
+                            .des {
+                                margin-left: 10px;
+                            }
+                        }
+
+                    }
+
+                    .ceo-share {                       
+                        
+                        .share-header {
+                            margin: 25px 0 25px;
+                        }
+                        .share-title {
+                            font-weight: bold;
+                        }
+                        .share-icon-block {
+                            display: flex;
+                            flex-wrap: wrap;
+                            .share-icon {
+                                margin: 20px 20px 20px;
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,147 @@
+@import '../../theme.scss';
+
+.demo-page {
+    display: flex;
+    flex-direction: column;
+    font-family: Maax;
+    color: $secondary-text;
+
+    .demo-container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .send-box {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            margin: 0 auto;
+            .email-input {
+                flex: 1;
+                height: 100%;
+                border: 2px solid #E7EBEE;
+                z-index: inherit;
+            }
+            .send-btn {
+                height: 100%;
+                outline: none;
+                border: none;
+                color: white;
+                background-color: $primary-color;
+                z-index: inherit;
+                font-weight: bold;
+            }
+            .bg-dot {
+                left: 12px;
+                width: 100%;
+            }
+        }
+
+        .demo-list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .start-btn {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .demo-page {
+        .demo-container {
+            .send-box {
+                width: 45% !important;
+            }
+
+            .demo-list {
+                img {
+                    width: 900px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .demo-page {
+        padding: 103px 0 120px;
+        .demo-container {
+            .title {
+                font-size: 45px;
+                line-height: 57px;
+                margin-bottom: 53px;
+            }
+
+            .send-box {
+                height: 65px;
+                width: 60%;
+                margin-bottom: 50px;
+                
+                .email-input {
+                    font-size: 18px;
+                    padding-left: 22px;
+                }
+                .send-btn {
+                    width: 162px;
+                    font-size: 20px;
+                }
+            }
+
+            .demo-list {
+                img {
+                    width: 80%;
+                }
+            }
+
+            .start-btn {
+                margin-top: 110px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .demo-page {
+        padding: 66px 0 88px;
+        .demo-container {
+            .title {
+                font-size: 34px;
+                line-height: 45px;
+                margin-bottom: 26px;
+            }
+            .send-box {
+                height: 50px;
+                margin-top: 21px;
+                width: 80%;
+                margin-bottom: 50px;
+                
+                .email-input {
+                    font-size: 13px;
+                    padding-left: 17px;
+                }
+                .send-btn {
+                    width: 111px;
+                    font-size: 13px;
+                }
+            }
+            .demo-list {
+                img {
+                    width: 100%;
+                }
+            }
+            .start-btn {
+                margin-top: 100px;
+            }
+        }
+    }
+}

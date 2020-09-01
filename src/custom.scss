@@ -1,0 +1,23 @@
+.v-r {
+    display: flex;
+    flex-direction: column;
+}
+
+.v-c {
+    display: flex;
+    align-items: center;
+}
+
+.h-c {
+    display: flex;
+    justify-content: center;
+}
+
+.svg-icon {
+    display: flex;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+    }
+}

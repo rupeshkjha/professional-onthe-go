@@ -1,0 +1,26 @@
+@import '../../../theme.scss';
+
+.comment-component {
+    font-size: 15px;
+    flex: 1;
+    color: $secondary-text;
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+
+    .comment-header {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .comment-component {
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .comment-component {
+    }
+}

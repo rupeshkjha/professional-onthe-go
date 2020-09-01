@@ -1,0 +1,147 @@
+@import '../../theme.scss';
+
+.aboutus-page {
+    display: flex;
+    flex-direction: column;
+    font-family: Maax;
+    color: $secondary-text;
+
+    .aboutus-container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            text-align: center;
+            line-height: 57px;
+            font-weight: bold;
+        }
+
+        .main-row {
+            border-bottom: 1px solid #E7EBEE;
+            .left-area {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: min-content;
+                }
+
+                h1 {
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin: 0;
+                }
+            }
+            .right-area {
+                .image-container {
+                    position: relative;
+                    box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                }
+
+                img {
+                    position: relative;
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .first-row {
+            padding-top: 0 !important;
+        }
+
+        .start-btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .aboutus-page {
+        .aboutus-container {
+            max-width: 1100px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .aboutus-page {
+        padding: 103px 0 130px;
+        .aboutus-container {
+            .title {
+                font-size: 45px;
+                margin-bottom: 109px;
+            }
+            .main-row {
+                padding: 60px 0 49px;
+
+                .left-area {
+                    padding: 0;
+                    img {
+                        margin-bottom: 22px;
+                    }
+
+                    h1 {
+                        font-size: 28px;
+                        margin: 0 0 16px;
+                    }
+
+                    p {
+                        width: 90%;
+                    }
+                }
+
+                .right-area {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            .start-btn {
+                margin-top: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .aboutus-page {
+        padding: 61px 0 74px;
+        .aboutus-container {
+            .title {
+                font-size: 34px;
+                margin-bottom: 56px;
+            }
+            .main-row {
+                padding: 74px 0 52px;
+                .left-area {
+                    img {
+                        margin: 0 auto 25px auto;
+                    }
+
+                    h1 {
+                        font-size: 28px;
+                        margin: 0 0 16px;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+                .right-area {
+                    margin-bottom: 36px;
+                }
+            }
+            .start-btn {
+                margin-top: 74px;
+            }
+        }
+    }
+}

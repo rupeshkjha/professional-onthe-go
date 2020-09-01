@@ -1,0 +1,101 @@
+@import '../../../theme.scss';
+
+.tutors-component {
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-text;
+    padding-top: 107px;
+    .tutors-container {
+        display: flex;
+        flex-direction: column;
+        
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .main-row {
+            padding: 0;
+            .owl-theme {
+                .owl-nav {
+                    .owl-prev, .owl-next {
+                        outline: none;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+                .owl-stage-outer {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    .owl-stage {
+                        display: flex;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tutors-container {
+        max-width: 1190px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tutors-component {
+        
+        .tutors-container {
+            .title {
+                font-size: 34px;
+                margin-bottom: 33px;
+            }
+            .main-row {
+                .owl-theme {
+                    .owl-nav {
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        margin: 0;
+                        left: -30px;
+                        right: -30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tutors-component {
+        .tutors-container {
+            padding: 10px 0 50px 0;
+            .title {
+                font-size: 28px;
+                margin-bottom: 22px;
+            }
+            .main-row {
+                .owl-theme {
+                    .owl-nav {
+                        .owl-prev, .owl-next {
+                            outline: none;
+                            &:hover {
+                                background: white;
+                            }
+                        }
+                        .owl-prev {
+                            margin: 0 15px 0 5px;
+                        }
+                        .owl-next {
+                            margin: 0 5px 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

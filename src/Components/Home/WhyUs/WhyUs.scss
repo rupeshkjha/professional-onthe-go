@@ -1,0 +1,102 @@
+@import '../../../theme.scss';
+
+.whyus-component {
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-text;
+    background: #F9FAFB;
+
+
+    .whyus-container {
+        display: flex;
+        flex-direction: column;
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .row-container {
+            position: relative;
+        }
+
+        .main-row {
+            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+            position: relative;
+            background: white;
+            z-index: 1;
+            
+            .explain-item {
+                padding: 22px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #E7EBEE;
+
+                .explain-text {
+                    font-size: 15px;
+                    line-height: 24px;
+                    max-width: 85%;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }   
+        }
+        .start-btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .whyus-component {
+        padding: 105px 0 108px;
+        .whyus-container {
+            .title {
+                font-size: 34px;
+                margin-bottom: 33px;
+            }
+            .main-row {
+                .col-area {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .explain-item {
+                        width: 95%;
+                    }
+                }
+            }
+            .start-btn {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .whyus-component {
+        padding: 73px 0 78px;
+        .whyus-container {
+            .title {
+                font-size: 28px;
+                margin-bottom: 21px;
+            }
+            .main-row {
+                margin: 0;
+                .left-col {
+                    .explain-item {
+                        &:last-child {
+                            border-bottom: 1px solid #E7EBEE;
+                        }
+                    }
+                }
+            }
+            .start-btn {
+                margin-top: 31px;
+            }
+        }
+    }
+}

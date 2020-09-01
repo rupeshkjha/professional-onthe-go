@@ -1,0 +1,481 @@
+@import '../../theme.scss';
+
+.tutorsignup-page {
+    display: flex;
+    color: $secondary-text;
+    position: relative;
+    overflow-x: hidden;
+
+    .center-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .work-area {
+        background: white;
+
+        .work-container {
+            display: flex;
+            flex-direction: column;
+            textarea {
+                resize: none;
+                width: 100%;
+                border: 2px solid #E7EBEE;
+                z-index: 2;
+                position: relative;
+                height: 135px;
+            }
+
+            .additional-bg {
+                left: 27px;
+                right: 3px;
+                top: 84px;
+                bottom: -5px;
+            }
+            
+            .work-content {
+                .grade-level {
+                    width: 100%;
+                    font-weight: bold;
+                    cursor: pointer;
+                    text-align: center;
+
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+                .profile-col {
+                    margin-bottom: 31px;
+                }
+                .ok-btn {
+                    cursor: pointer;
+                    background: $primary-text;
+                    color: white;
+                    font-size: 20px;
+                    width: 100px;
+                    height: 60px;
+                    margin-top: 30px;
+                }
+            }
+
+            .subject-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .subject-item {
+                    background: #203662;
+                    margin: 0 15px 15px 0;
+                    padding: 0 15px;
+                    height: 50px;
+                    p {
+                        font-size: 15px;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .svg-icon {
+                        transform: rotate(45deg);
+                        margin-left: 19px;
+                        cursor: pointer;
+                        svg {
+                            fill: rgba($color: #fff, $alpha: 0.3);
+                        }
+                    }
+                }
+            }
+        }
+
+        .submit-area {
+            border-top: 1px solid #D8D8D8;
+
+            .btn-area {
+                .back-btn {
+                    color: #C0C5C9;
+                    border: 2px solid #C0C5C9;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    .back-icon {
+                        border-right: 2px solid #C0C5C9;
+                        height: 100%;
+                    }
+                    .back-text {
+                        height: 100%;
+                        font-weight: bold;
+                    }
+                    &.back-btn2 {
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    &.back-btn3 {
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            &.custom-submit {
+                border-top: none;
+            }
+        }
+    }
+
+    .progress-explain {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .work-content {
+        animation: contentShow 0.3s ease-out;
+    }
+
+    .margin {
+        margin-right: 31em;
+    }
+    .tutorsignup-page {
+        margin-top: -70px;
+        position: relative;
+        background: no-repeat url('../../Assets/Tutor/bg.png');
+        background-position: 0 0;
+        background-size: 100% 100vh;
+        min-height: 100vh;
+
+        .work-area {
+            animation: contentAppear 0.3s ease-out;
+            width: calc(100% - 493px);
+            margin-left: auto;
+            max-height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            .work-container {
+                max-width: 900px;
+
+                .work-content {
+                    margin-top: 55px;
+                    flex: 1;
+
+                    h1 {
+                        font-size: 36px;
+                        margin-bottom: 18px;
+                    }
+
+                    textarea {
+                        padding: 17px 24px;
+                    }
+
+                    .section-1-row {
+                        margin-bottom: 130px;
+                    }
+
+                    .grade-level-col {
+                        margin-bottom: 44px;
+                    }
+
+                    .grade-level {
+                        height: 65px;
+                        border: 2px solid #E7EBEE;
+                        font-size: 20px;
+                        background: white;
+                        z-index: 2;
+                        position: relative;
+
+                        &.active {
+                            color: white;
+                            background: $secondary-text;
+                        }
+                    }
+
+                    .grade-level-bg {
+                        left: 27px;
+                        top: 14px;
+                        bottom: -12px;
+                        right: 3px;
+                    }
+                    #section-1-1 {
+                        margin-top: 80px;
+                        .profile-col {
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .profile-col {
+                        &.third-col {
+                            margin-bottom: 90px;
+                        }
+                    }
+                }
+
+                #section-2 {
+                    h3 {
+                        padding: 137px 90px 0 90px;
+                        font-size: 28px;
+                        line-height: 45px;
+                    }
+                    .start-btn {
+                        height: 65px;
+                        margin: 54px 0 0 90px;
+                    }
+                }
+            }
+
+            .submit-area {
+                .submit-container {
+                    max-width: 900px;
+                    padding-top: 142px;
+
+                    .btn-area {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .back-btn {
+                            height: 65px;
+                            width: 143px;
+                            .back-icon {
+                                width: 65px;
+                            }
+                            .back-text {
+                                flex: 1;
+                                font-size: 20px;
+                            }
+                            &.back-btn2 {
+                                width: 96px;
+                            }
+                            &.back-btn3 {
+                                width: 96px;
+                                margin-left: auto;
+                            }
+                        }
+
+                        .start-btn {
+                            width: 338px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .progress-explain {
+            position: fixed;
+            height: 100vh;
+            max-height: 100vh;
+            top: 0;
+            width: 493px;
+            padding: 0 41px 0 65px;
+            overflow-y: auto;
+
+            .custom-bg {
+                width: 338px;
+                height: 260px;
+                left: 109px;
+                bottom: calc(50% - 130px);
+                background: url('../../Assets/Common/bg-dot-2.png');
+            }
+
+            h1 {
+                font-size: 50px;
+                line-height: 56px;
+                margin-bottom: 26px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                padding-right: 80px;
+            }
+
+            .explain-content {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                z-index: 20;
+                max-height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .tutorsignup-page {
+        min-height: calc(100vh - 70px);
+        .progress-explain {
+            display: none;
+        }
+
+        .work-area {
+            width: 100%;
+
+            .work-container {
+                .work-content {
+                    margin-top: 55px;
+                    flex: 1;
+
+                    h1 {
+                        font-size: 24px;
+                        line-height: 38px;
+                        margin-bottom: 18px;
+                    }
+
+                    h2 {
+                        font-size: 30px;
+                        line-height: 38px;
+                    }
+
+                    textarea {
+                        padding: 12px 16px;
+                    }
+
+                    .section-1-row {
+                        margin-bottom: 80px;
+                    }
+
+                    .grade-level-col {
+                        margin-bottom: 30px;
+                    }
+
+                    .grade-level {
+                        height: 50px;
+                        border: 2px solid #E7EBEE;
+                        font-size: 16px;
+                        background: white;
+                        z-index: 2;
+                        position: relative;
+
+                        &.active {
+                            color: white;
+                            background: $secondary-text;
+                        }
+                    }
+
+                    .grade-level-bg {
+                        left: 23px;
+                        top: 8px;
+                        bottom: -8px;
+                        right: 7px;
+                    }
+
+                    #section-2-1 {
+                        margin-top: 35px;
+                    }
+
+                    .profile-col {
+                        display: flex;
+                        align-items: center;
+                        .initial-name {
+                            width: 75px;
+                            height: 75px;
+                            background-color: #3ABDAA;
+                            font-size: 20px;
+                            font-weight: bold;
+                            border-radius: 50%;
+                            color: white;
+                            margin-right: 30px;
+                            overflow: hidden;
+                            text-transform: uppercase;
+                        }
+                        label {
+                            flex: 1;
+                            margin: 0;
+                            .upload-btn {
+                                width: 100%;
+                                height: 40px;
+                                border: 2px solid $secondary-text;
+                                font-size: 15px;
+                                font-weight: bold;
+                            }
+                        }
+                        &.third-col {
+                            margin-bottom: 60px;
+                        }
+                    }
+                }
+
+                #section-2 {
+                    h3 {
+                        margin-top: 37px;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    .start-btn {
+                        margin-top: 36px;
+                    }
+                }
+            }
+
+            .submit-area {
+                .submit-container {
+                    padding-top: 60px;
+
+                    .btn-area {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .back-btn {
+                            height: 50px;
+                            width: 135px;
+                            .back-icon {
+                                width: 50px;
+                            }
+                            .back-text {
+                                flex: 1;
+                                font-size: 16px;
+                            }
+                            &.back-btn2 {
+                                width: 90px;
+                            }
+                            &.back-btn3 {
+                                width: 165px;
+                                margin-left: auto;
+                            }
+                        }
+
+                        .start-btn {
+                            width: 193px;
+                            font-size: 16px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes contentShow {
+    0% { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes contentAppear {
+    0% { 
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+#section-explain-1, #section-explain-2, #section-explain-3, #section-explain-4, #section-explain-5, #section-explain-6, #section-explain-7, #section-explain-8, #section-explain-9 {
+    animation: contentShow 0.3s ease-out;
+}

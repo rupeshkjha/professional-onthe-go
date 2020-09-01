@@ -1,0 +1,229 @@
+@import '../../../theme.scss';
+
+.pricing-component {
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-text;
+    background: #F9FAFB;
+
+    .center-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 15px;
+            
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .main-row {
+            .pricing-boday {
+                padding: 30px;
+                background: white;
+
+                .slider-block {
+                    .slider-item {
+                        padding: 10px 0 10px;
+                        color: #203662;
+                        .slider-des-header {
+                            font-size: 20px;    
+                            font-weight: bold;                        
+                        }
+                        .slider-des-body {
+                            font-size: 13px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .total-price {
+                margin-bottom: 30px;
+                .price {
+                    font-size: 20px;
+                    font-weight: bold;
+                    
+                }
+            }
+            .note {
+                padding: 20px;
+                background: #F9FAFB
+            }
+        }
+        .start-btn {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pricing-component {
+        padding: 107px 0 108px;
+        background: no-repeat url('../../../Assets/Home/pricing-bg.png');
+        background-position: center;
+        background-size: 100% 100%;
+        .pricing-container {
+            .title {
+                font-size: 34px;
+                margin-bottom: 25px;
+                color: #ffffff;
+            }   
+            .description {
+                display: flex;
+                align-items: center;
+                margin-bottom: 50px;
+                p {
+                    font-size: 18;
+                    color: #ffffff;
+                }
+                .free-txt {
+                    margin-left: -52px;
+                }
+            }
+            
+            .main-row {
+                .pricing-header {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    .category-active {
+                        color: #203662;
+                        width: 120px;
+                        height: 60px;
+                        background: white;
+                        cursor: pointer;
+                    }
+                    .category-unActive {
+                        color: #E7EBEE ;
+                        opacity: 0.5;
+                        width: 120px;
+                        height: 60px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .start-btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pricing-component {
+        padding: 75px 0 61px;
+        background: no-repeat url('../../../Assets/Home/pricing-bg.png');
+        background-position: center;
+        background-size: 100% 100%;
+        .pricing-container {
+            position: relative;
+            .title {
+                font-size: 28px;
+                margin-bottom: 15px;
+                color: #ffffff;
+            }
+            .description {
+                display: flex;
+                align-items: center;                
+                p {
+                    font-size: 18;
+                    color: #ffffff;
+                }
+                .free-txt {
+                    margin-left: -52px;
+                }
+            }
+            .des-position {
+                margin-bottom: 30px;
+            }
+            .main-row {
+                .pricing-mobile-header {
+                    border-bottom: #F9FAFB solid 2px;
+                    background: white;
+                    width: 100%;
+                    margin: 0 15px 0 15px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    color: #203662;
+                    font-weight: bold;    
+                    .menu-left-position {
+                        padding-right: 0;
+                        .prcing-menu {
+                            border: #23A4EF solid 2px;
+                            margin: 20px 0 20px;
+                            padding: 10px 0 10px;
+                        }  
+                    }
+                    .menu-right-position {
+                        padding-left: 0;
+                        .drop-icon {
+                            cursor: pointer;
+                            border: #23A4EF solid 2px;
+                            border-left: none;
+                            align-items: center;
+                            padding: 10px 0 10px;
+                        } 
+                    }
+                           
+                }
+                .pricing-mobile-header-list {
+                    border-bottom: #F9FAFB solid 2px;
+                    background: white;
+                    width: 100%;
+                    margin: 0 15px 0 15px;
+                    display: flex;
+                    font-size: 20px;
+                    color: #203662;
+                    font-weight: bold;    
+                    padding: 20px 0 20px;
+                    .menu-left-position {
+                        padding-right: 0;
+                        cursor: pointer;
+                        .prcing-menu {
+                            border: #23A4EF solid 2px;
+                            border-bottom: none;
+                            padding: 10px 0 10px;
+                        }  
+                        .prcing-menu-final {
+                            border: #23A4EF solid 2px;
+                            padding: 10px 0 10px;
+                        }  
+                    }
+                    .menu-right-position {
+                        padding-left: 0;
+                        .drop-icon {
+                            cursor: pointer;
+                            border: #23A4EF solid 2px;
+                            border-left: none;
+                            align-items: center;
+                            padding: 10px 0 10px;
+                        } 
+                    }
+                           
+                }
+                .pricing-boday {
+                    margin: 0 15px 0 15px;
+                }
+            }
+            .start-btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

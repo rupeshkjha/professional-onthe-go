@@ -1,0 +1,200 @@
+@import '../../../theme.scss';
+
+.footer-component {
+    background-color: $primary-bg;
+    padding: 31px 0 23px 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    .container {
+        display: flex;
+
+        .contact-row {
+            display: flex;
+            font-family: Maax;
+            font-size: 15px;
+            color: white;
+    
+            .action-row {
+                display: flex;
+                .action {
+                    display: flex;
+                    color: white;
+                }
+            }
+    
+            .social-row {
+                display: flex;
+                align-items: center;
+    
+                .social {
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    
+        .term-row {
+            font-family: Proxima Nova;
+            display: flex;
+    
+            .term {
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .tutor-btn {
+            height: 50px;
+            border: 2px solid white;
+            cursor: pointer;
+            display: flex;
+            .tutor-name {
+                padding-left: 17px;
+                padding-right: 17px;
+                border-right: 2px solid white;
+            }
+            .arrow-btn {
+                width: 50px;
+            }
+            .sub-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: bold;
+                height: 100%;
+                color: white;
+            }
+        }
+
+        
+
+        .link-area {
+            .tutor-area-mobile {
+                display: none;
+                margin-top: 26px;
+            }
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-component {
+        .container {
+            align-items: center;
+            justify-content: space-between;
+
+            .link-area {
+                .tutor-area-mobile {
+                    display: none !important;
+                }
+            }
+
+            .tutor-area-web {
+                display: flex !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer-component {
+        .container {
+            align-items: center;
+            justify-content: space-between;
+
+            .link-area {
+                .tutor-area-mobile {
+                    display: inline-block;
+                }
+            }
+
+            .tutor-area-web {
+                display: none;
+            }
+        }
+        .contact-row {
+            .action-row {
+                .action {
+                    height: 35px;
+                    border-right: 1px solid #979797;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 29px;
+                    
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .social-row {
+                margin-left: 30px;
+            }
+        }
+
+        .term-row {
+            margin-top: 26px;
+            .term {
+                margin-right: 29px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer-component {
+        .container {
+            .link-area {
+                .tutor-area-mobile {
+                    display: inline-block;
+                }
+            }
+            .tutor-area-web {
+                display: none;
+            }
+        }
+
+        .contact-row {
+            flex-direction: column-reverse;
+
+            .action-row {
+                flex-direction: column;
+
+                .action {
+                    margin-bottom: 18px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            
+            .social-row {
+                margin-bottom: 24px;
+            }
+        }
+
+        .term-row {
+            margin-top: 26px;
+            flex-direction: column;
+
+            .term {
+                margin-bottom: 18px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,239 @@
+@import '../../../theme.scss';
+
+.instructors-component {
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-text;
+    .center-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .instructors-container {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .main-row {    
+            
+            .left-area {     
+                      
+                box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                position: relative;
+                background: white;
+                z-index: 1;
+                padding: 0px;
+                .video-img {
+                    padding: 0px;
+                    position: relative;
+                    .left-right-arrow{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: absolute;
+                        top: 50%;
+                        left: 15px;
+                        right: 15px;
+                        transform: translateY(-50%);
+                        .left-arrow {                       
+                            width: 45px;
+                            height: 45px;
+                            cursor: pointer;
+                            background: hsla(0,0%,100%,.1);
+                            border-radius: 50%;
+                        }
+                        .right-arrow {                        
+                            width: 45px;
+                            height: 45px;
+                            cursor: pointer;
+                            background: hsla(0,0%,100%,.1);
+                            border-radius: 50%;                       
+                        }
+                    }
+                    .video-left-right-arrow { 
+                        width: 0px;
+                        height: 0px;
+                    }
+                    &:hover {
+                        .video-left-right-arrow {    
+                            height: 100%;                    
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            position: absolute;
+                            top: 50%;
+                            left: 45%;
+                            right: 50px;
+                            transform: translateY(-50%);
+                            .left-arrow {                       
+                                width: 45px;
+                                height: 45px;
+                                cursor: pointer;
+                                background: hsla(0,0%,100%,.1);
+                                border-radius: 50%;
+                            }
+                            .right-arrow {                        
+                                width: 45px;
+                                height: 45px;
+                                cursor: pointer;
+                                background: hsla(0,0%,100%,.1);
+                                border-radius: 50%;                       
+                            }
+                            .pause {
+                                width: 45px;
+                                height: 45px;
+                                cursor: pointer;
+                                background: hsla(0,0%,100%,.1);
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                .pause-in {
+                                    width: 10px;
+                                    height: 25px;
+                                    background: black;
+                                    margin: 0 2px 0 2px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .right-side {
+                    .core-explain {
+                        display: flex;
+                        margin-bottom: 22px;
+    
+                        img {
+                            width: 28px;
+                            height: 28px;
+                        }
+    
+                        .explain {
+                            font-size: 15px;
+                            line-height: 24px;
+                            margin-left: 15px;
+                        }
+    
+                        &:nth-of-type(4) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                
+            }
+            .right-area {               
+                justify-content: space-between;
+                .logo-row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: calc(100%/5);
+                    .university {
+                        width: calc(50% - 7.5px);
+                        height: 100%;                        
+                    }
+                    .select-university {
+                        width: calc(50% - 7.5px);
+                        height: 100%;
+                        border-radius: 10px;
+                        box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .instructors-component {
+        padding: 107px 0 0px;
+        border-top: #F9FAFB solid 2px;
+        .instructors-container {
+            .title {
+                font-size: 34px;
+                margin-bottom: 48px;
+            }
+            .main-row {                
+                .left-area {
+                    display: flex;
+                    align-items: center;    
+                }
+                .right-area {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .instructors-component {
+        padding: 70px 0 0px;
+        border-top: #F9FAFB solid 2px;
+        .instructors-container {
+            .title {
+                font-size: 28px;
+                margin-bottom: 48px;
+            }
+            .main-row {
+                .left-area {
+                    // margin: 0 15px 0 15px;
+                    padding: 0 15px 0 15px;
+                    img {
+                        padding: 0;
+                    }
+                    .right-side {
+                        margin-top: 30px;
+                        .core-explain {
+                            display: flex;
+                            margin-bottom: 22px;
+        
+                            img {
+                                width: 28px;
+                                height: 28px;
+                            }
+        
+                            .explain {
+                                font-size: 15px;
+                                line-height: 24px;
+                            }
+        
+                            &:nth-of-type(4) {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .right-area {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    justify-content: space-between;
+                    .logo-row {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 90px;
+                        .university {
+                            width: calc(50% - 7.5px);
+                            height: 100%;                        
+                        }
+                        .select-university {
+                            width: calc(50% - 7.5px);
+                            height: 100%;
+                            border-radius: 10px;
+                            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                            background: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
