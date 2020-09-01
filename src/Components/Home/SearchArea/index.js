@@ -1,43 +1,34 @@
 import React from "react";
 import "./SearchArea.scss";
-import coreBG from "../../../Assets/Home/core-bg.png";
-import checkmark from "../../../Assets/Common/checkmark.png";
-import { StartButton } from "../../";
-import { NavLink } from "react-router-dom";
-
-const texts = [
-  "We believe every student can excel if matched with the right tutor ",
-  "We believe a good tutor should be patient, kind, and knowledgeable in their field ",
-  "We believe one-on-one tutoring should be affordable and accessible to all",
-  "We believe the future of education will be online, and that online platforms have a significant advantage ",
-  "We believe in Christian values and philosophy, which guide all of our business decisions, including how we price our services to those who would otherwise not be able to afford it.  GradeGetter is meant to be a welcoming place for all students, from all walks of life where each student feels that they are welcomed, valued, and honored. ",
-];
+import blogRight from "../../../Assets/Blog/headerbg.png";
 
 export default class SearchArea extends React.Component {
   render() {
     return (
-      <div className="ourcore-component">
-        <div className="container ourcore-container">
-          <div className="title">SearchArea</div>
+      <div className="blogfooter-component">
+        <div className="container blogfooter-container">
           <div className="row main-row">
             <div className="col-lg-6 left-area">
-              <img src={coreBG} alt="core-bg" />
-            </div>
-            <div className="col-lg-6 right-area">
-              {texts.map((item, index) => {
-                return (
-                  <div className="core-explain" key={index}>
-                    <img src={checkmark} alt="checkmark" />
-                    <div className="explain">{item}</div>
+              <h1>We register 10% of all Indian companies .</h1>
+
+              <p>That’s one company every 9 minutes</p>
+              <div className="form-area">
+                <div className="email-area">
+                  <div className="send-box">
+                    <input
+                      className="email-input"
+                      placeholder="Enter your business name"
+                    />
+                    <button className="send-btn">Get Started</button>
                   </div>
-                );
-              })}
-              <NavLink style={{ textDecoration: "none" }} to="/sign-up">
-                <StartButton
-                  className="start-btn"
-                  startText="Start Free Tiral"
-                />
-              </NavLink>
+                  <div className="explain">
+                    Over 10,000 registered and background checks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 right-area show-web-flex">
+              <img src={blogRight} alt="right-bg" style={{ height: "100%" }} />
             </div>
           </div>
         </div>
