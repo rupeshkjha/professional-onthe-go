@@ -21,7 +21,8 @@ export default class Features extends React.Component {
           <div className="title">Features</div>
           <div className="row main-row">
             <div className="col-lg-6 left-area">
-              <img src={img6} alt="core-bg" />
+              <img style={{ position: 'relative', zIndex: '1', boxShadow: '0px 9px 45px rgba(0, 0, 0, 0.08)' }} src={img6} alt="core-bg" />
+              <div className="bg-dot row-dot show-web my-bg-dot" alt="bgdot" />
             </div>
             <div className="col-lg-6 right-area">
               {texts.map((item, index) => {
@@ -33,6 +34,7 @@ export default class Features extends React.Component {
                 );
               })}
             </div>
+
           </div>
         </div>
       </div>

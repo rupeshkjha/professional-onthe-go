@@ -84,11 +84,11 @@ export default class Pricing extends React.Component {
                     this.state.currentCategory === index
                       ? "category-active"
                       : "category-unActive"
-                  }`}
+                    }`}
                   key={index}
                   onClick={(e) => this.selectCategory(item, index)}
                 >
-                 Lorem
+                  Lorem
                 </div>
               ))}
             </div>
@@ -104,7 +104,7 @@ export default class Pricing extends React.Component {
                       <div
                         className={`center-item   ${
                           index === 3 ? "prcing-menu-final" : "prcing-menu"
-                        }`}
+                          }`}
                         key={index}
                         onClick={(e) => this.selectedMenu(item)}
                       >
@@ -123,84 +123,84 @@ export default class Pricing extends React.Component {
                   </div>
                 </div>
               ) : (
-                <div className="pricing-mobile-header">
-                  <div className="col-lg-10 col-md-10 col-sm-10 col-10 menu-left-position">
+                  <div className="pricing-mobile-header">
+                    <div className="col-lg-10 col-md-10 col-sm-10 col-10 menu-left-position">
+                      <div
+                        className="center-item prcing-menu"
+                        onClick={(e) => this.openCloseMenu(true)}
+                      >
+                        {this.state.selectedMenuName}
+                      </div>
+                    </div>
+
                     <div
-                      className="center-item prcing-menu"
+                      className="col-lg-2 col-md-2 col-sm-2 col-2 menu-right-position"
                       onClick={(e) => this.openCloseMenu(true)}
                     >
-                      {this.state.selectedMenuName}
+                      <div className="drop-icon text-center">
+                        <img src={menuDown} alt="right-bg" />
+                      </div>
                     </div>
                   </div>
-
-                  <div
-                    className="col-lg-2 col-md-2 col-sm-2 col-2 menu-right-position"
-                    onClick={(e) => this.openCloseMenu(true)}
-                  >
-                    <div className="drop-icon text-center">
-                      <img src={menuDown} alt="right-bg" />
-                    </div>
-                  </div>
-                </div>
-              )}
+                )}
             </div>
 
             <div className="pricing-boday">
-            <div class="container">
-  <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Lorem ipsum </h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$ <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-        </ul>
-        <a aria-current="page" class="menu-item active" href="/">Get Started</a>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Lorem ipsum </h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$ <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-        </ul>
-        <a aria-current="page" class="menu-item sign-up active" href="/">Get Started</a>
-      </div>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Lorem ipsum </h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$ <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-          <li>Lorem ipsum dolor</li>
-        </ul>
-        <a aria-current="page" class="menu-item sign-up active" href="/">Get Started</a>
-      </div>
-      
-    </div>
-  </div>
+              <div className="container">
+                <div className="card-deck text-center">
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header">
+                      <h4 className="my-0 font-weight-normal">Lorem ipsum </h4>
+                    </div>
+                    <div className="card-body">
+                      <h1 className="card-title pricing-card-title">$ <small className="text-muted">/ mo</small></h1>
+                      <ul className="list-unstyled mt-3 mb-4">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                      </ul>
+                      <a aria-current="page" className="menu-item active" href="/">Get Started</a>
+                    </div>
+                  </div>
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header">
+                      <h4 className="my-0 font-weight-normal">Lorem ipsum </h4>
+                    </div>
+                    <div className="card-body">
+                      <h1 className="card-title pricing-card-title">$ <small className="text-muted">/ mo</small></h1>
+                      <ul className="list-unstyled mt-3 mb-4">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                      </ul>
+                      <a aria-current="page" className="menu-item sign-up active" href="/">Get Started</a>
+                    </div>
+                  </div>
+                  <div className="card mb-4 shadow-sm">
+                    <div className="card-header">
+                      <h4 className="my-0 font-weight-normal">Lorem ipsum </h4>
+                    </div>
+                    <div className="card-body">
+                      <h1 className="card-title pricing-card-title">$ <small className="text-muted">/ mo</small></h1>
+                      <ul className="list-unstyled mt-3 mb-4">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                      </ul>
+                      <a aria-current="page" className="menu-item sign-up active" href="/">Get Started</a>
+                    </div>
 
-  
-</div>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     );
