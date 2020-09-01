@@ -1,7 +1,5 @@
 import arrowLeft from "./Assets/Common/arrow-left.png";
 import arrowRight from "./Assets/Common/arrow-right.png";
-import arrowLeft2 from "./Assets/Tutor/left-arrow-carousel.png";
-import arrowRight2 from "./Assets/Tutor/right-arrow-carousel.png";
 
 export const StarSVGViewBox = "0 0 16 15";
 export const StarSVGIconPath =
@@ -18,21 +16,12 @@ export const CarouselRightButton = `
     </div>
 `;
 
-export const CarouselLeftButton2 = `
-    <div style='width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:white;border:2px solid #23A4EF'>
-        <img src='${arrowLeft2}' alt='nav-arrow' />
-    </div>
-`;
-export const CarouselRightButton2 = `
-    <div style='width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:white;border:2px solid #23A4EF'>
-        <img src='${arrowRight2}' alt='nav-arrow' />
-    </div>
-`;
-
 export const GetDashboardUrl = (user, token) => {
   return (
     (user.role === "student"
       ? process.env.REACT_APP_STUDENT_DASHBOARD_URL
-      : process.env.REACT_APP_TUTOR_DASHBOARD_URL) + '/auth?token=' + token
+      : process.env.REACT_APP_TUTOR_DASHBOARD_URL) +
+    "/auth?token=" +
+    token
   );
 };

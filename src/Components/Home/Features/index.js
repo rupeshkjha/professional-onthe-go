@@ -6,11 +6,11 @@ import { StartButton } from "../../";
 import { NavLink } from "react-router-dom";
 
 const texts = [
-  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
-  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
-  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
-  "Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag.",
-  "Lorem ipsum dolor amet mustache knausgaard +1.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit ",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit ",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 ];
 
 export default class Features extends React.Component {

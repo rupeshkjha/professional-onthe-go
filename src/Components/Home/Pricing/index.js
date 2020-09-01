@@ -10,7 +10,7 @@ export default class Pricing extends React.Component {
   state = {
     currentCategory: 0,
     selectMenu: false,
-    selectedMenuName: "Weekly",
+    selectedMenuName: "Lorem",
     currentWeekHour: 1,
     currentHourlyRate: 1,
     selectedItem: 0,
@@ -53,26 +53,26 @@ export default class Pricing extends React.Component {
     return (
       <div className="pricing-component">
         <div className="container pricing-container">
-          <div className="title">Pricing</div>
+          <div className="title">Our Services</div>
           <div className="show-web-flex">
             <div className="description mx-auto ">
-              <p>Choose how much to pay and your first lesson is </p>
+              <p>Lorem ipsum dolor Lorem ipsum dolor</p>
               <img src={freeBg} alt="right-bg" />
-              <p className="free-txt">FREE</p>
+              <p className="free-txt">Lorem </p>
             </div>
           </div>
 
           <div className="show-mobile mx-auto">
             <div className="description ">
-              <p>Choose how much to pay and your first</p>
+              <p>Lorem ipsum dolor Lorem ipsum dolor</p>
             </div>
           </div>
 
           <div className="show-mobile mx-auto">
             <div className="description des-position">
-              <p>lesson is </p>
+              <p>Lorem ipsum dolor </p>
               <img src={freeBg} alt="right-bg" />
-              <p className="free-txt">FREE</p>
+              <p className="free-txt">Lorem </p>
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export default class Pricing extends React.Component {
                   key={index}
                   onClick={(e) => this.selectCategory(item, index)}
                 >
-                  {item.name}
+                 Lorem
                 </div>
               ))}
             </div>
@@ -146,43 +146,61 @@ export default class Pricing extends React.Component {
             </div>
 
             <div className="pricing-boday">
-              <div className="slider-block">
-                <div className="slider-item">
-                  <div className="slider-des-header text-center">
-                    {this.state.currentWeekHour}Hrs
-                  </div>
-                  <div className="slider-des-body text-center">
-                    Hours needed per week?
-                  </div>
-                  {this.state.selectedItem.min_hour}
-                </div>
-                <div className="slider-item">
-                  <div className="slider-des-header text-center">
-                    ${this.state.currentHourlyRate}/hr
-                  </div>
-                  <div className="slider-des-body text-center">
-                    Choose your price
-                  </div>
-                  {this.state.selectedItem.min_rate}
-                </div>
-              </div>
-              <div className="total-price">
-                <div className="text-center mx-auto"></div>
-              </div>
-              <div className="note">
-                <p>
-                  At , we let our customers choose what they can pay for online
-                  and one-on-one tutoring. Paying a little more helps to offset
-                  the cost for families who might not be able to afford tutoring
-                  regularly. With this approach, we are able to make private
-                  tutoring more accessible and affordable for everyone.
-                </p>
-              </div>
+            <div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Lorem ipsum </h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+        </ul>
+        <a aria-current="page" class="menu-item active" href="/">Get Started</a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Lorem ipsum </h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+        </ul>
+        <a aria-current="page" class="menu-item sign-up active" href="/">Get Started</a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Lorem ipsum </h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+        </ul>
+        <a aria-current="page" class="menu-item sign-up active" href="/">Get Started</a>
+      </div>
+      
+    </div>
+  </div>
+
+  
+</div>
             </div>
           </div>
-          <NavLink style={{ textDecoration: "none" }} to="/sign-up">
-            <StartButton className="start-btn" startText="Start Free Tiral" />
-          </NavLink>
+          
         </div>
       </div>
     );

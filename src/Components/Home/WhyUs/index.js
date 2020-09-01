@@ -6,20 +6,20 @@ import { ReactSVG } from "react-svg";
 import { NavLink } from "react-router-dom";
 
 const leftTexts = [
-  "GradeGetter will only charge you if you are 100% satisfied",
-  "No contracts, no commitments, and cancel any time",
-  "Choose from a network of thousands of certified tutors ",
-  "Find a price that works for your lifestyle ",
-  "All tutors are based in the U.S. and must pass a background check ",
-  "GradeGetter uses a reliable and easy to use platform for online tutoring ",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet ",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet ",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
 ];
 
 const rightTexts = [
-  "We're disrupting the expensive and un affordable tutoring market",
-  "We have done background checks on all our tutors",
-  "We have the most reliable and easy to use tutoring platform",
-  "We only offer online tutoring",
-  "We only hire US based tutor",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet",
+  "Lorem ipsum dolor sit amet",
 ];
 
 export default class WhyUs extends React.Component {
