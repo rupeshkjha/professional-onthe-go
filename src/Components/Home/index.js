@@ -8,3 +8,4 @@ export { default as ClientSaying } from './ClientSaying';
 export { default as WhyUs } from './WhyUs';
 export { default as Transparency } from './Transparency';
 export { default as OurCore } from './OurCore';
+

@@ -130,30 +130,30 @@ class Header extends React.Component {
               ) : (
                 <div className="menu">
                   <a className="menu-item" href="/#section-1-4">
-                    Why Us
+                  Buissness Setup
                   </a>
                   <NavLink className="menu-item" exact to="/features">
-                    Features
+                  Tax & Compliance
                   </NavLink>
                   {/* <NavLink className="menu-item" exact to="/reviews">Reviews</NavLink> */}
                   {/* <NavLink className="menu-item" exact to="/">Reviews</NavLink> */}
                   <a className="menu-item" href="/#section-1-9">
-                    Reviews
+                  Trademark & IP
                   </a>
                   {/* <NavLink className="menu-item" exact to="/tutors">Tutors</NavLink> */}
                   <a className="menu-item" href="/#section-1-7">
-                    Tutors
+                  Fundraising
                   </a>
 
                   <NavLink className="menu-item" exact to="/demo">
-                    Demo
+                  Contracts
                   </NavLink>
                   <NavLink className="menu-item" exact to="/values">
-                    Values
+                  NGO
                   </NavLink>
                   {/* <NavLink className="menu-item" to="#section-1-5">Price</NavLink>  */}
                   <a className="menu-item" href="/#section-1-5">
-                    Price
+                  Property & personal
                   </a>
                   <NavLink className="menu-item extra-item" exact to="/sign-in">
                     Sign In

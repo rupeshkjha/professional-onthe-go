@@ -11,7 +11,7 @@ export default class HowItWorks extends React.Component {
     return (
       <div className="works-component">
         <div className="container works-container">
-          <div className="title">How it works</div>
+          <div className="title">Lorem ipsum dolor sit amet</div>
           <div className="row main-row">
             <div className="col-lg-4">
               <div className="item-area text-center">
@@ -22,10 +22,9 @@ export default class HowItWorks extends React.Component {
                   <img src={work1} alt="core-bg" />
                 </div>
                 <div className="des-item">
-                  <h1>Tutoring Needs:</h1>
+                  <h1>Lorem ipsum dolor sit amet:</h1>
                   <p>
-                    Tell us your specific tutoring needs and the type of tutor
-                    you would like to work with
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   </p>
                 </div>
               </div>
@@ -41,10 +40,9 @@ export default class HowItWorks extends React.Component {
                   <img src={work2} alt="core-bg" />
                 </div>
                 <div className="des-item">
-                  <h1>Name your price:</h1>
+                  <h1>Lorem ipsum dolor sit amet::</h1>
                   <p>
-                    Choose what you can pay and how often you want to pay for
-                    online tutoring services
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   </p>
                 </div>
               </div>
@@ -59,11 +57,9 @@ export default class HowItWorks extends React.Component {
                   <img src={work3} alt="core-bg" />
                 </div>
                 <div className="des-item">
-                  <h1>Placement:</h1>
+                  <h1>Lorem ipsum dolor sit amet::</h1>
                   <p>
-                    Based on the information you share with us, we will pair you
-                    with a qualified tutor that fits your needs. The first
-                    lesson is always FREE!
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   </p>
                 </div>
               </div>

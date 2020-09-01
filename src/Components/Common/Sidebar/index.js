@@ -37,29 +37,29 @@ class Sidebar extends React.Component {
                             <ReactSVG src={ add } className='icon-close' onClick={ () => this.closeSidebar() }/>
                         </div>
                         <div className="menu">
-                            <NavLink className="menu-item" exact to="/" onClick={this.closeSidebar}>Home</NavLink>
+                            <NavLink className="menu-item" exact to="/" onClick={this.closeSidebar}>Buissness Setup</NavLink>
                             <a className="menu-item" href="/#section-1-4" onClick={this.closeSidebar}>
                                 Why Us
                             </a>
                             {/* <NavLink className="menu-item" exact to="/about-us" onClick={this.closeSidebar}>Why Us</NavLink> */}
-                            <NavLink className="menu-item" exact to="/features" onClick={this.closeSidebar}>Features</NavLink>
+                            <NavLink className="menu-item" exact to="/features" onClick={this.closeSidebar}>Tax & Compliance</NavLink>
                             {/* <NavLink className="menu-item" exact to="/reviews" onClick={this.closeSidebar}>Reviews</NavLink> */}
                             {/* <NavLink className="menu-item" exact to="/" onClick={this.closeSidebar}>Reviews</NavLink> */}
-                            <a className="menu-item" href="/#section-1-9" onClick={this.closeSidebar}>Reviews</a>
+                            <a className="menu-item" href="/#section-1-9" onClick={this.closeSidebar}>Trademark & IP</a>
                             {/* <NavLink className="menu-item" exact to="/tutors" onClick={this.closeSidebar}>Tutors</NavLink> */}
-                            <a className="menu-item" href="/#section-1-7" onClick={this.closeSidebar}>Tutors</a>                   
+                            <a className="menu-item" href="/#section-1-7" onClick={this.closeSidebar}>Fundraising</a>                   
 
                             {/* <NavLink className="menu-item" exact to="/try-demo" onClick={this.closeSidebar}>Demo</NavLink> */}
-                            <NavLink className="menu-item" exact to="/demo" onClick={this.closeSidebar}>Demo</NavLink>
-                            <NavLink className="menu-item" exact to="/values" onClick={this.closeSidebar}>Values</NavLink>
+                            <NavLink className="menu-item" exact to="/demo" onClick={this.closeSidebar}>Contracts</NavLink>
+                            <NavLink className="menu-item" exact to="/values" onClick={this.closeSidebar}>NGO</NavLink>
                             {/* <NavLink className="menu-item" exact to="/price" onClick={this.closeSidebar}>Price</NavLink> */}
-                            <a className="menu-item" href="/#section-1-5" onClick={this.closeSidebar}>Price</a>                            
+                            <a className="menu-item" href="/#section-1-5" onClick={this.closeSidebar}>Property & personal</a>                            
 
-                            {/* <NavLink className="menu-item" exact to="/share" onClick={this.closeSidebar}>Share</NavLink> */}
+                            <NavLink className="menu-item" exact to="/share" onClick={this.closeSidebar}>Partner With Us</NavLink>
                             <div className="sub-menu">
-                                <NavLink className="menu-item" exact to="/sign-in" onClick={this.closeSidebar}>Sign In</NavLink>
-                                <NavLink className="menu-item" exact to="/sign-up" onClick={this.closeSidebar}>SIGN UP FREE</NavLink>
-                                <NavLink className="menu-item" exact to="/become-tutor" onClick={this.closeSidebar}>Become a tutor</NavLink>
+                                <NavLink className="menu-item" exact to="/sign-in" onClick={this.closeSidebar}>Log In</NavLink>
+                                <NavLink className="menu-item" exact to="/sign-up" onClick={this.closeSidebar}>SIGN UP </NavLink>
+                                {/* <NavLink className="menu-item" exact to="/become-tutor" onClick={this.closeSidebar}>Become a tutor</NavLink> */}
                             </div>
                             <StartButton className="start-btn" height="45px" />
                         </div>
