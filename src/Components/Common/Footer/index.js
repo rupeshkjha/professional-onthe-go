@@ -38,16 +38,16 @@ class Footer extends React.Component {
                   About Us
                 </NavLink>
                 <NavLink className="action" exact to="/about-us">
+                  Media
+                </NavLink>
+                <NavLink className="action" exact to="/about-us">
+                  Press Release
+                </NavLink>
+                <NavLink className="action" exact to="/about-us">
                   Contact Us
                 </NavLink>
                 <NavLink className="action" exact to="/about-us">
-                  Link
-                </NavLink>
-                <NavLink className="action" exact to="/about-us">
-                  Link
-                </NavLink>
-                <NavLink className="action" exact to="/about-us">
-                  Link
+                  Partner With Us
                 </NavLink>
               </div>
               <div className="social-row">

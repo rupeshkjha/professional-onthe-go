@@ -143,7 +143,7 @@ class Header extends React.Component {
                   <NavLink className="menu-item" exact to="/sign-in">
                     Sign In
                   </NavLink>
-                  <NavLink
+                   <NavLink
                     className="menu-item sign-up"
                     exact
                     to="/tutor-signup"
@@ -176,16 +176,14 @@ class Header extends React.Component {
                         About Us
                       </NavLink>
                       <NavLink className="menu-item" exact to="/about-us">
-                        Link
+                      Business Setup
+                      </NavLink>
+                     
+                      <NavLink className="menu-item" exact to="/about-us">
+                        Trademark & IP
                       </NavLink>
                       <NavLink className="menu-item" exact to="/about-us">
-                        Link
-                      </NavLink>
-                      <NavLink className="menu-item" exact to="/about-us">
-                        Link
-                      </NavLink>
-                      <NavLink className="menu-item" exact to="/about-us">
-                        Link
+                        Fundraising
                       </NavLink>
                       <NavLink className="menu-item" exact to="/">
                         Sign In
