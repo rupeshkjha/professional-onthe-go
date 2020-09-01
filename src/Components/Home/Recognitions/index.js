@@ -1,20 +1,11 @@
 import React from "react";
 import "./Recognitions.scss";
-import freeBg from "../../../Assets/Home/free-bg.png";
 import cbs from "../../../Assets/Home/CBS.png";
 import cnn from "../../../Assets/Home/CNN.png";
 import fox from "../../../Assets/Home/FOX.png";
 import boston from "../../../Assets/Home/The_Boston_Globe.png";
 import miami from "../../../Assets/Home/The-Miami-Herald-Logo.png";
-import homeRightImg1 from "../../../Assets/Home/home-rightImg1.png";
-import homeRightImg2 from "../../../Assets/Home/home-rightImg2.png";
-import homeRightImg3 from "../../../Assets/Home/home-rightImg3.png";
-import homeRightImg4 from "../../../Assets/Home/home-rightImg4.png";
-import homeRightImg5 from "../../../Assets/Home/home-rightImg5.png";
-import { StartButton, HourlyRateSlider } from "../../Common";
-import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { NavLink } from "react-router-dom";
 
 export default class Recognitions extends React.Component {
   state = {

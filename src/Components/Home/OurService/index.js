@@ -35,7 +35,7 @@ export default class OurService extends React.Component {
               <NavLink style={{ textDecoration: "none" }} to="/sign-up">
                 <StartButton
                   className="start-btn"
-                  startText="Start Free Tiral"
+                  startText="Get Started"
                 />
               </NavLink>
             </div>
