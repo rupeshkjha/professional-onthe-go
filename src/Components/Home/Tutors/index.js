@@ -9,16 +9,6 @@ import tutor3 from "../../../Assets/Home/tutor-photo-3.png";
 import tutor4 from "../../../Assets/Home/tutor-photo-4.png";
 import { Tutor } from "../../";
 
-// const tutors = [
-//   {
-//     name: "1. Aswathy A.",
-//     photo: tutor1,
-//     job: "Graduate CS Student at UTA",
-//     school: "University of Texas in Arlington",
-//     description:
-//       "I am a Bachelor's Degree student at University of Texas at Arlington.",
-//   },
-// ];
 
 const OwlCarousel = Loadable(() => import("react-owl-carousel"));
 
@@ -29,7 +19,7 @@ export default class Tutors extends React.Component {
     return (
       <div className="tutors-component">
         <div className="container tutors-container">
-          <div className="title">Who are our tutors</div>
+          <div className="title">Lorem ipsum dolor sit amet</div>
           <div className="col-lg-12 main-row">
             <Media
               queries={{

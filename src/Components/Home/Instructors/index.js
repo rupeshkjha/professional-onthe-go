@@ -31,11 +31,11 @@ import { Player } from 'video-react';
 import 'video-react/dist/video-react.css';
 
 const texts = [
-    'All instractor are from top US universities',
-    'Have completed a teaching development on our curiculum',
-    'Not just instructors but coding mentors to their students',
-    'Have experience in instructinng students in programming',
-    'Have experience in instructinng students in programming'
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
 ];
 
 const universities = [
@@ -106,7 +106,7 @@ export default class Instructors extends React.Component {
         return (
             <div className="instructors-component">
                 <div className="container instructors-container">
-                    <div className="title">Our instructors are from top U.S universities</div>
+                    <div className="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
                     <div className="row main-row">
                         <div className="col-lg-8 left-area">
                             <div className="col-lg-7 video-img">

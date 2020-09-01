@@ -11,32 +11,32 @@ export default class ClientSaying extends React.Component {
   render() {
     const clients = [
       {
-        name: "fgdf",
-        address: "fdgdf",
+        name: "Lorem",
+        address: "Lorem",
         level: 1,
         comment_date: new Date().toDateString(),
-        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       },
       {
-        name: "fgdf",
-        address: "fdgdf",
+        name: "Lorem",
+        address: "Lorem",
         level: 1,
         comment_date: new Date().toDateString(),
-        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       },
       {
-        name: "fgdf",
-        address: "fdgdf",
+        name: "Lorem",
+        address: "Lorem",
         level: 1,
         comment_date: new Date().toDateString(),
-        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       },
       {
-        name: "fgdf",
-        address: "fdgdf",
+        name: "Lorem",
+        address: "Lorem",
         level: 1,
         comment_date: new Date().toDateString(),
-        description: "Lfdgdf fd g df gdf gfd gdf gdf gdf g dfgdf g dfg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       },
     ];
     return (

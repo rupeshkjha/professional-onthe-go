@@ -5,13 +5,13 @@ import transparencyRight from "../../../Assets/Home/transparency-right.png";
 import { NavLink } from "react-router-dom";
 
 const transparencyTableData = [
-  { title: "Payment to tutor", price: "$20.00" },
-  { title: "Software cost", price: "$3.00" },
-  { title: "Service cost", price: "$2.50" },
-  { title: "Support cost", price: "$2.50" },
-  { title: "Admin cost", price: "$2.50" },
-  { title: "Advistising cost", price: "$7.00" },
-  { title: "TOTAL COST", price: "$38.50" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
+  { title: "Lorem ipsum dolor sit amet", price: "$" },
 ];
 
 export default class Transparency extends React.Component {
@@ -19,9 +19,9 @@ export default class Transparency extends React.Component {
     return (
       <div className="transparency-component">
         <div className="container transparency-container">
-          <div className="title">We're Committed to Maximum Transparency</div>
+          <div className="title">Lorem ipsum dolor sit amet</div>
           <div className="description">
-            Cost of providing one hour of tutoring
+          Lorem ipsum dolor sit amet
           </div>
           <div className="row-container">
             <div className="main-row show-web-flex">

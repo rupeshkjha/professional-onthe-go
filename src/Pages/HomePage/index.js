@@ -23,28 +23,28 @@ import {
 import { withRouter } from "react-router-dom";
 const plans = [
   {
-    name: "Weekly",
+    name: "Lorem ",
     min_hour: 1,
     max_hour: 25,
     min_rate: 25,
     max_rate: 75,
   },
   {
-    name: "Biweekly",
+    name: "Lorem",
     min_hour: 1,
     max_hour: 50,
     min_rate: 27.5,
     max_rate: 75,
   },
   {
-    name: "Monthly",
+    name: "Lorem",
     min_hour: 2,
     max_hour: 100,
     min_rate: 30,
     max_rate: 75,
   },
   {
-    name: "One Time",
+    name: "Lorem",
     min_hour: 2,
     max_hour: 200,
     min_rate: 35,
@@ -58,9 +58,9 @@ class HomePage extends React.Component {
 
   render() {
     const { tutors, connections } = this.props;
-    console.log("Connection Here ->", connections);
-    console.log("Tutor Here ->", tutors);
-    console.log("Plans Here ->", plans);
+    console.log("Lorem Here ->", connections);
+    console.log("Lorem Here ->", tutors);
+    console.log("Lorem Here ->", plans);
 
     return (
       <div className="home-page" ref={this.workContainer}>

@@ -10,16 +10,15 @@ export default class StartArea extends React.Component {
         <div className="container blogfooter-container">
           <div className="row main-row">
             <div className="col-lg-6 left-area">
-              <h1>No contract.</h1>
-              <h1>No min commitment.</h1>
+              <h1>Lorem ipsum </h1>
+              <h1>Lorem ipsum dolor sit amet</h1>
               <img
                 src={footerPrice}
                 className="show-mobile"
                 alt="footer-price"
               />
               <p>
-                Only 1-on-1 Pay As You Go Online Tutoring With U.S Based Tutors
-                In All Subjects & Test Prep
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
               </p>
               <div className="form-area">
                 <div className="email-area">
@@ -31,8 +30,7 @@ export default class StartArea extends React.Component {
                     <button className="send-btn">Get Started</button>
                   </div>
                   <div className="explain">
-                    Over 10,000 verified and background checks U.S tutors ready
-                    to work with you
+                  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
                   </div>
                 </div>
               </div>

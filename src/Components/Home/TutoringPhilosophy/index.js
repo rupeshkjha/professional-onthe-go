@@ -13,23 +13,23 @@ const tutors = [
   {
     left_img: clock,
     right_img: tutor_1,
-    title: "Get Up to Speed",
+    title: "Lorem ipsum dolor sit amet",
     explain:
-      "Tutors make sure students are up to speed by reviewing older concepts they might have missed. Fundamentals are important!     ",
+      "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet ",
   },
   {
     left_img: speed,
     right_img: tutor_2,
-    title: "Move One Step Ahead",
+    title: "Lorem ipsum dolor sit amet",
     explain:
-      "Tutors will work to cover new topics and concepts before it is presented in class. This helps students with overall academic confidence!     ",
+      "Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit amet ",
   },
   {
     left_img: arm,
     right_img: tutor_3,
-    title: "Reinforcement and Organization",
+    title: "Lorem ipsum dolor sit amet",
     explain:
-      "The tutor will reinforce key concepts to make sure students never feel behind or inadequate. Tutors also help students with essential organization and study skills to ensure students are on top of everything they need to be successful     ",
+      "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet ",
   },
 ];
 
@@ -38,7 +38,7 @@ export default class TutoringPhilosophy extends React.Component {
     return (
       <div className="tutoringphilosophy-component">
         <div className="container tutoringphilosophy-container">
-          <div className="title">Tutoring philosophy</div>
+          <div className="title">Lorem ipsum dolor sit amet</div>
           {tutors.map((item, index) => {
             return (
               <div
