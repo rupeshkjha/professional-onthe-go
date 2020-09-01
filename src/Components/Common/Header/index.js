@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
-import logo from "../../../Assets/Header/logo.png";
-import logo2 from "../../../Assets/Header/logo2.png";
+import logo from "../../../Assets/Header/logo.svg";
+
 import hamburger from "../../../Assets/Header/hamburger.svg";
 import { NavLink, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
@@ -116,7 +116,7 @@ class Header extends React.Component {
                 <img src={logo} alt="logo" />
               </NavLink>
               <NavLink className="menu-item show-mobile" exact to="/">
-                <img src={logo2} alt="logo" />
+                <img src={logo} alt="logo" />
               </NavLink>
               {this.checkTutor() ? (
                 <div className="menu">
