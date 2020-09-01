@@ -18,7 +18,7 @@ export default class OurSupport extends React.Component {
     return (
       <div className="ourcore-component">
         <div className="container ourcore-container">
-          <div className="title">At Our Core</div>
+          <div className="title">OurSupport</div>
           <div className="row main-row">
             <div className="col-lg-6 left-area">
               <img src={coreBG} alt="core-bg" />

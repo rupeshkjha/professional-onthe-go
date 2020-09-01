@@ -16,6 +16,9 @@ import {
   OurService,
   OurSupport,
   Recognitions,
+  SearchArea,
+  Features,
+  Clients,
 } from "../../Components";
 import {
   getTutorAction,
@@ -42,23 +45,17 @@ class HomePage extends React.Component {
 
     return (
       <div className="home-page" ref={this.workContainer}>
-        <BlogStartArea />
-        <StartArea />
-        <HowItWorks />
-        <OurCore />
+        <SearchArea />
+        <Features />
+        <Clients />
         <OurService />
-        <OurSupport />
+        <WhyUs />
+        {connections && <ClientSaying clients={connections} />}
         <Recognitions />
-        <div id="section-1-4">
-          <WhyUs />
-        </div>
-        <div id="section-1-5">{plans && <Pricing plans={plans} />}</div>
-        <Instructors />
-        <div id="section-1-7">{tutors && <Tutors tutors={tutors} />}</div>
-        <TutoringPhilosophy />
-        <div id="section-1-9">
-          {connections && <ClientSaying clients={connections} />}
-        </div>
+        <OurSupport />
+
+        {/*  */}
+        <HowItWorks />
       </div>
     );
   }

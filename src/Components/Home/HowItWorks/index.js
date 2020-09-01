@@ -11,7 +11,7 @@ export default class HowItWorks extends React.Component {
     return (
       <div className="works-component">
         <div className="container works-container">
-          <div className="title">Lorem ipsum dolor sit amet</div>
+          <div className="title">HowItWorks</div>
           <div className="row main-row">
             <div className="col-lg-4">
               <div className="item-area text-center">
@@ -24,7 +24,8 @@ export default class HowItWorks extends React.Component {
                 <div className="des-item">
                   <h1>Lorem ipsum dolor sit amet:</h1>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
                   </p>
                 </div>
               </div>
@@ -42,7 +43,8 @@ export default class HowItWorks extends React.Component {
                 <div className="des-item">
                   <h1>Lorem ipsum dolor sit amet::</h1>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
                   </p>
                 </div>
               </div>
@@ -59,7 +61,8 @@ export default class HowItWorks extends React.Component {
                 <div className="des-item">
                   <h1>Lorem ipsum dolor sit amet::</h1>
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
                   </p>
                 </div>
               </div>

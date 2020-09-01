@@ -1,5 +1,5 @@
 import React from "react";
-import "./Recognitions.scss";
+import "./Features.scss";
 import coreBG from "../../../Assets/Home/core-bg.png";
 import checkmark from "../../../Assets/Common/checkmark.png";
 import { StartButton } from "../../";
@@ -13,12 +13,12 @@ const texts = [
   "We believe in Christian values and philosophy, which guide all of our business decisions, including how we price our services to those who would otherwise not be able to afford it.  GradeGetter is meant to be a welcoming place for all students, from all walks of life where each student feels that they are welcomed, valued, and honored. ",
 ];
 
-export default class Recognitions extends React.Component {
+export default class Features extends React.Component {
   render() {
     return (
       <div className="ourcore-component">
         <div className="container ourcore-container">
-          <div className="title">Recognitions</div>
+          <div className="title">Features</div>
           <div className="row main-row">
             <div className="col-lg-6 left-area">
               <img src={coreBG} alt="core-bg" />

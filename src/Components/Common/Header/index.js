@@ -69,7 +69,7 @@ class Header extends React.Component {
 
   checkTutor = () => {
     const pathName = this.props.location.pathname;
-    return pathName === "/tutor-home" ? true : false;
+    return pathName === "/profile" ? true : false;
   };
 
   isLogin() {
@@ -127,37 +127,15 @@ class Header extends React.Component {
                     Sign In
                   </NavLink>
                   <NavLink className="menu-item extra-item" exact to="/sign-up">
-                    START FREE TRIAL
+                    Get Started
                   </NavLink>
                 </div>
               ) : (
                 <div className="menu">
                   {/* <NavLink className="menu-item" exact to="/reviews">Reviews</NavLink> */}
                   {/* <NavLink className="menu-item" exact to="/">Reviews</NavLink> */}
-                  <a className="menu-item" href="/#section-1-9">
-                    Trademark & IP
-                  </a>
-                  {/* <NavLink className="menu-item" exact to="/tutors">Tutors</NavLink> */}
-                  <a className="menu-item" href="/#section-1-7">
-                    Fundraising
-                  </a>
 
-                  <NavLink className="menu-item" exact to="/demo">
-                    Contracts
-                  </NavLink>
-                  <NavLink className="menu-item" exact to="/values">
-                    NGO
-                  </NavLink>
-                  {/* <NavLink className="menu-item" to="#section-1-5">Price</NavLink>  */}
-                  <a className="menu-item" href="/#section-1-5">
-                    Property & personal
-                  </a>
-                  <NavLink className="menu-item extra-item" exact to="/sign-in">
-                    Sign In
-                  </NavLink>
-                  <NavLink className="menu-item extra-item" exact to="/sign-up">
-                    START FREE TRIAL
-                  </NavLink>
+                  {/* <NavLink className="menu-item" exact to="/tutors">Tutors</NavLink> */}
                 </div>
               )}
               {this.checkTutor() ? (
@@ -170,7 +148,7 @@ class Header extends React.Component {
                     exact
                     to="/tutor-signup"
                   >
-                    START FREE TRIAL
+                    Get Started
                   </NavLink>
                 </div>
               ) : (
@@ -189,20 +167,31 @@ class Header extends React.Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        GO TO DASHBOARD
+                        Profile
                       </a>
                     </>
                   ) : (
                     <>
-                      <NavLink className="menu-item" exact to="/sign-in">
+                      <NavLink className="menu-item" exact to="/about-us">
+                        About Us
+                      </NavLink>
+                      <NavLink className="menu-item" exact to="/about-us">
+                        Link
+                      </NavLink>
+                      <NavLink className="menu-item" exact to="/about-us">
+                        Link
+                      </NavLink>
+                      <NavLink className="menu-item" exact to="/about-us">
+                        Link
+                      </NavLink>
+                      <NavLink className="menu-item" exact to="/about-us">
+                        Link
+                      </NavLink>
+                      <NavLink className="menu-item" exact to="/">
                         Sign In
                       </NavLink>
-                      <NavLink
-                        className="menu-item sign-up"
-                        exact
-                        to="/sign-up"
-                      >
-                        START FREE TRIAL
+                      <NavLink className="menu-item sign-up" exact to="/">
+                        Get Started
                       </NavLink>
                     </>
                   )}
@@ -210,7 +199,7 @@ class Header extends React.Component {
               )}
               <div className="show-mobile">
                 <NavLink className="header-start-button" exact to="/sign-up">
-                  START FREE TRIAL
+                  Get Started
                 </NavLink>
               </div>
               <div className="hamburger" onClick={this.openSidebar}>

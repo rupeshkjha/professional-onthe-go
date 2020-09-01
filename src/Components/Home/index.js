@@ -11,3 +11,6 @@ export { default as OurCore } from "./OurCore";
 export { default as OurService } from "./OurService";
 export { default as OurSupport } from "./OurSupport";
 export { default as Recognitions } from "./Recognitions";
+export { default as Clients } from "./Clients";
+export { default as Features } from "./Features";
+export { default as SearchArea } from "./SearchArea";

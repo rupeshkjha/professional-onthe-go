@@ -34,28 +34,25 @@ class Footer extends React.Component {
           <div className="link-area">
             <div className="contact-row">
               <div className="action-row">
-                <NavLink className="action" exact to="/contact-us">
-                  Contact Us
-                </NavLink>
                 <NavLink className="action" exact to="/about-us">
                   About Us
                 </NavLink>
-                <NavLink className="action" exact to="/faqs">
-                  FAQs
+                <NavLink className="action" exact to="/about-us">
+                  Contact Us
                 </NavLink>
-                <NavLink className="action" exact to="/blog">
-                  Blog
+                <NavLink className="action" exact to="/about-us">
+                  Link
                 </NavLink>
-                <NavLink className="action" exact to="/team">
-                  Team
+                <NavLink className="action" exact to="/about-us">
+                  Link
                 </NavLink>
-                <NavLink className="action" exact to="/refund">
-                  Refund
+                <NavLink className="action" exact to="/about-us">
+                  Link
                 </NavLink>
               </div>
               <div className="social-row">
                 <a
-                  href="https://www.facebook.com/gradegetter"
+                  href="https://www.facebook.com/"
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -63,7 +60,7 @@ class Footer extends React.Component {
                   <img src={facebook} alt="facebook" />
                 </a>
                 <a
-                  href="https://twitter.com/GradeGetter"
+                  href="https://twitter.com/"
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -71,7 +68,7 @@ class Footer extends React.Component {
                   <img src={twitter} alt="twitter" />
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UC6howHvJniKu7YypUvFps9Q/?guided_help_flow=5"
+                  href="https://www.youtube.com/"
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -79,7 +76,7 @@ class Footer extends React.Component {
                   <img src={youtube} alt="youtube" />
                 </a>
                 <a
-                  href="https://www.instagram.com/gradegetter"
+                  href="https://www.instagram.com/"
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -91,7 +88,7 @@ class Footer extends React.Component {
             <div className="tutor-area-mobile">
               <div className="tutor-btn">
                 <NavLink to="/tutor-home" className="sub-btn tutor-name">
-                  Become a tutor
+                  Get Started
                 </NavLink>
                 {/* <div className="sub-btn tutor-name">Become a tutor</div> */}
                 <div className="sub-btn arrow-btn">
@@ -101,7 +98,7 @@ class Footer extends React.Component {
             </div>
             <div className="term-row">
               <NavLink className="term" exact to="/">
-                © {new Date().getFullYear()} GradeGetter
+                © {new Date().getFullYear()} Get Started
               </NavLink>
               <NavLink className="term" exact to="/terms">
                 Terms of Service
@@ -112,8 +109,8 @@ class Footer extends React.Component {
             </div>
           </div>
           <div className="tutor-btn tutor-area-web">
-            <NavLink to="/tutor-home" className="sub-btn tutor-name">
-              Become a tutor
+            <NavLink to="/" className="sub-btn tutor-name">
+              Get Started
             </NavLink>
             {/* <div className="sub-btn tutor-name">Become a tutor</div> */}
             <div className="sub-btn arrow-btn">
