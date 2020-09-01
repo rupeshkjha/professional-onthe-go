@@ -154,12 +154,7 @@ export default class Pricing extends React.Component {
                   <div className="slider-des-body text-center">
                     Hours needed per week?
                   </div>
-                  <WeekHourSlider
-                    min={this.state.selectedItem.min_hour}
-                    max={this.state.selectedItem.max_hour}
-                    weeklyValue={this.state.currentWeekHour}
-                    weeklyHour={(e) => this.weeklyHour(e)}
-                  />
+                  {this.state.selectedItem.min_hour}
                 </div>
                 <div className="slider-item">
                   <div className="slider-des-header text-center">
@@ -168,33 +163,19 @@ export default class Pricing extends React.Component {
                   <div className="slider-des-body text-center">
                     Choose your price
                   </div>
-                  <HourlyRateSlider
-                    min={this.state.selectedItem.min_rate}
-                    max={this.state.selectedItem.max_rate}
-                    hourlyValue={this.state.currentHourlyRate}
-                    hourlyRate={(e) => this.hourlyRate(e)}
-                  />
+                  {this.state.selectedItem.min_rate}
                 </div>
               </div>
               <div className="total-price">
-                <div className="text-center mx-auto">
-                  <span>
-                    {this.state.selectedMenuName} cost for{" "}
-                    {this.state.currentWeekHour}hrs:{" "}
-                  </span>
-                  <span className="price">
-                    ${this.state.currentWeekHour * this.state.currentHourlyRate}
-                  </span>
-                </div>
+                <div className="text-center mx-auto"></div>
               </div>
               <div className="note">
                 <p>
-                  At GradeGetter, we let our customers choose what they can pay
-                  for online and one-on-one tutoring. Paying a little more helps
-                  to offset the cost for families who might not be able to
-                  afford tutoring regularly. With this approach, we are able to
-                  make private tutoring more accessible and affordable for
-                  everyone.
+                  At , we let our customers choose what they can pay for online
+                  and one-on-one tutoring. Paying a little more helps to offset
+                  the cost for families who might not be able to afford tutoring
+                  regularly. With this approach, we are able to make private
+                  tutoring more accessible and affordable for everyone.
                 </p>
               </div>
             </div>
