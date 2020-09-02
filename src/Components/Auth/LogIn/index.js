@@ -7,15 +7,11 @@ import { StartButton } from "../../";
 import { ReactSVG } from "react-svg";
 import { withRouter } from "react-router-dom";
 
-
-
 class Login extends React.Component {
   state = {
     username: "",
     password: "",
   };
-
-  
 
   doSignIn = () => {
     const { username, password } = this.state;
@@ -24,15 +20,13 @@ class Login extends React.Component {
     this.props.signInAction(username, password);
   };
 
-  
-
   render() {
     const { username, password } = this.state;
-    const {signErr} = this.props
+    const { signErr } = this.props;
     return (
       <div className="login-component">
         <h1>Sign In</h1>
-        {signErr? <p className="alert alert-danger">{signErr}</p> : null}
+        {signErr ? <p className="alert alert-danger">{signErr}</p> : null}
         <div className="input-group custom-input">
           <div className="input-group-prepend">
             <span className="input-group-text">
@@ -73,26 +67,24 @@ class Login extends React.Component {
           <div className="sign-up">
             Haven’t an account? <NavLink to="/sign-up">Sign Up</NavLink>
           </div>
-          <div className="show-web" onClick={() => this.doSignIn()}>
+          <a className="show-web" href onClick={() => this.doSignIn()}>
             <StartButton
               className="start-btn"
               height="65px"
               startText="Continue"
             />
-          </div>
-          <div className="show-mobile" onClick={() => this.doSignIn()}>
+          </a>
+          <a className="show-mobile" href onClick={() => this.doSignIn()}>
             <StartButton
               className="start-btn"
               height="50px"
               startText="Continue"
             />
-          </div>
+          </a>
         </div>
       </div>
     );
   }
 }
 
-
-
-export default (withRouter(Login));
+export default withRouter(Login);

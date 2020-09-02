@@ -7,34 +7,27 @@ import { StartButton } from "../../";
 import { ReactSVG } from "react-svg";
 import { withRouter } from "react-router-dom";
 
-
-
 class Login extends React.Component {
   state = {
     fullname: "",
     email: "",
     password: "",
     phonenumber: "",
-
   };
-
-
 
   doSignIn = () => {
     const { email, password } = this.state;
     if (email.length === 0 || password.length === 0) return;
     console.log(this.state);
-
   };
-
-
 
   render() {
     const { email, password, fullname, phonenumber } = this.state;
-    const { signErr } = this.props
+    const { signErr } = this.props;
+
     return (
       <div className="login-component">
-        <h1>Create an Account</h1>
+        <h1>Sign Up</h1>
         {signErr ? <p className="alert alert-danger">{signErr}</p> : null}
         <div className="input-group custom-input">
           <div className="input-group-prepend">
@@ -46,11 +39,12 @@ class Login extends React.Component {
           <input
             type="text"
             className="form-control"
-            placeholder="FullName"
+            placeholder="Full Name"
             value={fullname}
             onChange={(e) => this.setState({ fullname: e.target.value })}
           />
         </div>
+
         <div className="input-group custom-input">
           <div className="input-group-prepend">
             <span className="input-group-text">
@@ -66,7 +60,8 @@ class Login extends React.Component {
             onChange={(e) => this.setState({ email: e.target.value })}
           />
         </div>
-        <div className="input-group custom-input append-input">
+
+        <div className="input-group custom-input  ">
           <div className="input-group-prepend">
             <span className="input-group-text">
               {" "}
@@ -80,52 +75,45 @@ class Login extends React.Component {
             value={password}
             onChange={(e) => this.setState({ password: e.target.value })}
           />
-          <div className="input-group custom-input">
-            <div className="input-group-prepend">
-              <span className="input-group-text">
-                {" "}
-                <ReactSVG src={email} className="input-icon" />{" "}
-              </span>
-            </div>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="PhoneNumber"
-              value={phonenumber}
-              onChange={(e) => this.setState({ phonenumber: e.target.value })}
-            />
-          </div>
-          <div className="input-group-append">
+        </div>
+        <div className="input-group custom-input">
+          <div className="input-group-prepend">
             <span className="input-group-text">
               {" "}
-              <NavLink to="/forgot-password">Forgot Password?</NavLink>
+              <ReactSVG src={phonenumber} className="input-icon" />{" "}
             </span>
           </div>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Phone Number +91-XXXXXXXXXXX"
+            value={email}
+            onChange={(e) => this.setState({ phonenumber: e.target.value })}
+          />
         </div>
         <div className="action-area">
           <div className="sign-up">
-            Haven’t an account? <NavLink to="/sign-up">Sign Up</NavLink>
+            Already have an account ? <NavLink to="/sign-in">Sign In</NavLink>
           </div>
-          <div className="show-web" onClick={() => this.doSignIn()}>
+          <a className="show-web" href onClick={() => this.doSignIn()}>
             <StartButton
               className="start-btn"
               height="65px"
               startText="Continue"
             />
-          </div>
-          <div className="show-mobile" onClick={() => this.doSignIn()}>
+          </a>
+
+          <a className="show-mobile" href onClick={() => this.doSignIn()}>
             <StartButton
               className="start-btn"
               height="50px"
               startText="Continue"
             />
-          </div>
+          </a>
         </div>
       </div>
     );
   }
 }
 
-
-
-export default (withRouter(Login));
+export default withRouter(Login);
