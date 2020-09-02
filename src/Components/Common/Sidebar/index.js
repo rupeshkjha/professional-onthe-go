@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sidebar.scss';
-import logo from '../../../Assets/Header/logo.svg';
+import logo from '../../../Assets/Header/logo.png';
 import add from '../../../Assets/Common/add.svg';
 import { NavLink, withRouter } from 'react-router-dom';
 import { StartButton } from '../../';

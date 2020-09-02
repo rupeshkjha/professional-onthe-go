@@ -1,6 +1,5 @@
 import React from "react";
 import "./SignUp.scss";
-import email from "../../../Assets/Common/email.svg";
 import key from "../../../Assets/Common/key.svg";
 import { NavLink } from "react-router-dom";
 import { StartButton } from "../../";

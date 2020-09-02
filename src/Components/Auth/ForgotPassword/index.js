@@ -1,11 +1,10 @@
 import React from "react";
 import "./ForgotPassword.scss";
-import email from "../../../Assets/Common/email.svg";
 import { NavLink } from "react-router-dom";
 import { StartButton } from "../../";
 import { ReactSVG } from "react-svg";
 import { withRouter } from "react-router-dom";
-import { connect } from "react-redux";
+
 
 class ForgotPassword extends React.Component {
   state = {

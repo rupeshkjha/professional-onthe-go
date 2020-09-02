@@ -90,11 +90,11 @@ class Header extends React.Component {
           </div>
         ) : this.checkPage() === "sign-in" ? (
           <div className={`header-component`}>
-            <div className="container signin-container">
+            {/* <div className="container signin-container">
               <NavLink className="menu-item" exact to="/">
                 <img src={logo} alt="logo" style={{ width: 150 }} />
               </NavLink>
-            </div>
+            </div> */}
           </div>
         ) : (
               <div
