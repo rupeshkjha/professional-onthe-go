@@ -1,5 +1,6 @@
 import React from 'react';
 import './AuthPage.scss';
+import { NavLink } from "react-router-dom";
 import arrow from '../../Assets/Common/arrow.svg';
 import { ReactSVG } from 'react-svg'
 import { LogIn, ForgotPassword, NewPassword } from '../../Components';
@@ -16,8 +17,8 @@ class AuthPage extends React.Component {
                     <h1 className="show-web">Hello There, Join Us</h1>
                     <p className="explain show-web">Enter your personal details and join the learning community </p>
                     <div className="read-btn show-web">
-                        <div className="btn-text btn-element">SignUp</div>
-                        <div className="btn-arrow btn-element"><ReactSVG src={arrow} style={{fill: 'white'}} /></div>
+                        <div className="btn-text btn-element">Sign Up</div>
+                        <div className="btn-arrow btn-element"><NavLink to="/sign-up"><ReactSVG src={arrow} style={{fill: 'white'}} /></NavLink></div>
                     </div>
                     <div className="explain-mobile show-mobile-flex">
                         <h1>Hello There, Join Us</h1>
