@@ -175,10 +175,10 @@ class Header extends React.Component {
                               <NavLink className="menu-item" exact to="/about-us">
                                 Fundraising
                       </NavLink>
-                              <NavLink className="menu-item" exact to="/">
+                              <NavLink className="menu-item" exact to="/sign-in">
                                 Sign In
                       </NavLink>
-                              <NavLink className="menu-item sign-up" exact to="/">
+                              <NavLink className="menu-item sign-up" exact to="/sign-up">
                                 Get Started
                       </NavLink>
                             </>

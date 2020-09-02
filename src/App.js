@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.scss";
 import { Header, Sidebar, Footer } from "./Components";
-import { HomePage, AboutUsPage } from "./Pages";
+import { HomePage, AboutUsPage,  AuthPage } from "./Pages";
 import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
 
 function ScrollToTop() {
@@ -51,6 +51,10 @@ class App extends React.Component {
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/about-us" component={AboutUsPage} />
+                <Route exact path="/sign-in" component={AuthPage} />
+                <Route exact path="/sign-up" component={AuthPage} />
+                <Route exact path="/forgot-password" component={AuthPage} />
+                <Route exact path="/new-password" component={AuthPage} />
               </Switch>
             </div>
             <Footer />
